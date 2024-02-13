@@ -1,5 +1,5 @@
 # RPIXplore
-![alt text](./logo_with_title.png)
+![alt text](./resources/pictures/logo_with_title.png)
 
 ## Description:
 RPI currently has no dorm website that properly displays all information regarding dorms at RPI. The resources that do exist to learn about dorm life at RPI are lacking. rpirooms.com is an outdated resource and overall isn’t well made, and the student living and learning website contains outright wrong information and is a poor resource in terms of content. Using a modern tech stack, RPI Xplore aims to become the number one dorm resource for the entire RPI community, from prospective students to juniors entering their last year. Users will be able to browse all information ever needed on RPIXplore. What does this mean? We will be providing users with 3D LIDR scans of rooms, room-specific information, up-to-date images, and a discussion forum for any questions left unanswered. We hope to become the RPI community’s first and last stop for all things dorm by centralizing all data and questions to reduce the need to search between different forums such as Reddit, Facebook, and Discord. 
