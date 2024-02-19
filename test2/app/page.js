@@ -5,6 +5,7 @@ export default function Home() {
   return (
     <div>
       <a href="./NavBar"><Button>Click me</Button></a>
+      <img src="" alt="" />
     </div>
 
   );
