@@ -1,8 +1,10 @@
 import React from 'react'
-import { Navbar } from 'flowbite-react/lib/esm'
+import Nnn from '../components/navbar.js'
+import { Alert } from 'flowbite-react'
 
 export default function page() {
-  return (
-    <Navbar></Navbar>
-  )
+    return (
+        <Nnn></Nnn>
+        
+    )
 }
