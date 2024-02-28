@@ -1,0 +1,57 @@
+{
+    "Quad": {
+        "address" : "1665 15th St, Troy, NY 12180",
+        "location" : "In-Campus",
+        "year" : ["Sophomore"],
+        "accessible" : false,
+        "onebuilding" : false,
+        "laundryInfo" : {
+            "location" : "Hunt III Basement",
+            "nWashers" : 10,
+            "nDryers" : 14
+        },
+        "ac" : true,
+        "printer" : "Hunt III Basement",
+        "dining" : "Russel Sage Dining Hall",
+        
+        "stacks": {
+            "Roebling" : {
+                "description" : "Roebling is the north-eastern most stack of Quad. Like the rest of Quad, Roebling is accessible through the campus facing front door that is keycard locked. Via the third floor, Roebling connects to Pardee's third floor. The bathrooms are cleaned twice a week. The stack is single gender.",
+                "gender" : "single gender",
+                "roomInfo" : {
+                    "types": ["single", "double", "triple"],
+                    "mattress" : "Extra Long Twin (36in x 80in x 6in)",
+                    "bedHeight" : "Adjustable (max )",
+                    "Single" : {
+                        "sqft" : "Varying, check floor plan",
+                        "wardrobe" : "36in x 25in x 72in",
+                        "dresser" : "in x in x in, 3 drawer",
+                        "desk" : "48in x 24in",
+                        "deskBookcase" : "34in x 9in x 26in",
+                        "chair" : true,
+                        
+
+                    }
+                },
+                "nFloors" : 3,
+                "bathroomInfo" : {
+                    "type" : "Hall Bathroom",
+                    "toilets" : 2,
+                    "sinks" : 3,
+                    "showers" : 2
+                },
+                "kitchenInfo" : {
+                    "microwave" : true,
+                    "sink" : true,
+                    "fridge" : true,
+                    "stove" :true
+                }
+            },
+
+        }
+
+    },
+    "Barton": {
+
+    }
+}
