@@ -1,16 +1,15 @@
 'use client';
-import logo from '../logo.png'
+import logo from './logo.png'
 import Link from 'next/link';
 import { Navbar } from 'flowbite-react';
 
 
 export default function NavBar() {
-
   return (
     <Navbar fluid rounded>
-    <Navbar.Brand as={Link} href="https://flowbite-react.com">
-      <img src={logo.src} className="mr-3 h-9 sm:h-9 " alt="Flowbite React Logo" />
-      <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">RPIXplore</span>
+    <Navbar.Brand as={Link} href="./">
+      <img src={logo.src} className="mr-3 h-9 sm:h-9 " alt="RPIXplore Logo" />
+      <span className="self-center whitespace-nowrap text-xl font-bold dark:text-white">RPIXplore</span>
     </Navbar.Brand>
     <Navbar.Toggle />
     <Navbar.Collapse>
