@@ -8,7 +8,7 @@ import Tritiles from '@/component/tritiles/page';
 import MapComponent from '@/component/map/page';
 import Sector from '@/component/sector/page';
 
-export default function Home({ child = 'quad' }) {
+export default function Home({ child = 'Quad' }) {
   const jumbotronImage = require(`@/component/jumbotron/${child}jumbo.png`).default;
 
   return (
