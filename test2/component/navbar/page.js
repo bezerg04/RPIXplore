@@ -13,14 +13,14 @@ export default function NavBar() {
     </Navbar.Brand>
     <Navbar.Toggle />
     <Navbar.Collapse>
-      <Navbar.Link href="#" active>
+      <Navbar.Link href="./" active>
         Home
       </Navbar.Link>
       <Navbar.Link as={Link} href="#">
         Forum
       </Navbar.Link>
       <Navbar.Link href="#">Resources</Navbar.Link>
-      <Navbar.Link href="#">Dorms</Navbar.Link>
+      <Navbar.Link href="./dorms">Dorms</Navbar.Link>
       <Navbar.Link href="#">Login</Navbar.Link>
     </Navbar.Collapse>
   </Navbar>
