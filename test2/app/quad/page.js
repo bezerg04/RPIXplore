@@ -7,16 +7,13 @@ import Jumbotron from '@/component/jumbotron/page';
 import Welcome from '@/component/welcome/page';
 import Tritiles from '@/component/tritiles/page';
 import MapComponent from '@/component/map/page';
-import jumbopic from '@/component/jumbotron/jumbopic.png'
+import jumbopic from '@/component/jumbotron/quadjumbo.png'
 
 export default function Home() {
   return (
     <div>
       <NavBar></NavBar>
       <Jumbotron imageSrc={jumbopic.src} />
-      <Welcome></Welcome>
-      <Tritiles></Tritiles>
-      <MapComponent></MapComponent>
     </div>
    
   );
