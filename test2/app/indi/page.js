@@ -1,34 +1,36 @@
 'use client';
-import React from 'react';
-import { Button } from 'flowbite-react';
-import { Alert } from 'flowbite-react';
+import React, { useEffect, useState } from 'react';
 import NavBar from '@/component/navbar/page';
 import Jumbotron from '@/component/jumbotron/page';
-import Welcome from '@/component/welcome/page';
-import Tritiles from '@/component/tritiles/page';
-import MapComponent from '@/component/map/page';
+import data from '../../../resources/json.json';
 import Sector from '@/component/sector/page';
-import { useEffect, useState } from 'react';
 
-const DormPage = () =>{
-  const [dormName, setDormName] = useState('');
+const DormPage = () => {
+  const [dormData, setDormData] = useState(null);
+
   useEffect(() => {
     const storedDormName = localStorage.getItem('dormName');
     if (storedDormName) {
-      console.log(storedDormName)
-      setDormName(storedDormName);
+      console.log('Stored dorm name:', storedDormName);
+      const dataForName = data[storedDormName];
+      if (dataForName) {
+        setDormData(dataForName);
+      } else {
+        console.error('Dorm data not found for:', storedDormName);
+      }
+    } else {
+      console.log('No dorm name found in localStorage.');
     }
   }, []);
-  console.log('dorm name',dormName);
-  //const jumbotronImage = require(`@/component/jumbotron/${dormName}jumbo.png`).default;
 
   return (
     <div>
       <NavBar activeLink="Dorms" />
-      {/* <Jumbotron imageSrc={jumbotronImage.src} /> */}
-
-       <Sector data={dormName}/> 
+      <h1>{dormData ? dormData.name : 'Dorm not found'}</h1>
+      {dormData && dormData.img ? <Jumbotron imageSrc={dormData.img} /> : <p>Dorm information not available.</p>}
+      {dormData && <Sector sectionName={dormData.name}></Sector>}
     </div>
   );
-}
+};
+
 export default DormPage;

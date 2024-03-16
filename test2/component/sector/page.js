@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import data from '../../../resources/json.json'
 
-export default function Sector({ sectionName = 'Quad' }) {
+export default function Sector({ sectionName ="Barton" }) {
     // Dynamically access the section of the data based on the prop
     const sectionData = data[sectionName];
     
