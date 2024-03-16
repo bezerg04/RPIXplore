@@ -1,10 +1,18 @@
+'use client';
 import { Card } from 'flowbite-react';
+import Link from 'next/link';
 
 const DormCard = ({ dormData }) => {
   const { dormName, dormType, dormImg, dormSize, dormLink } = dormData; 
 
+  const handleClick = () => {
+    // Store dormName in localStorage
+    localStorage.setItem('dormName', dormName);
+  };
+
   return (
-    <a href={dormLink}>
+    <div onClick={handleClick}>
+    <Link href={`/indi`} passHref>
       <Card
         className="max-w-sm"
         imgAlt="Meaningful alt text for an image that is not purely decorative"
@@ -24,8 +32,8 @@ const DormCard = ({ dormData }) => {
           <p className="text-sm">{dormSize} sqft</p>
         </div>
       </Card>
-    </a>
-    
+    </Link>
+    </div>
   );
 };
 
