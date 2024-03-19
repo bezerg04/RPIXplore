@@ -13,7 +13,7 @@ export default function Sector({ sectionName ="Barton" }) {
     }
   
     return (
-      <div>
+      <div className=''>
         {/* Displaying information from the dynamically selected section */}
         <h1>{sectionName} Residence Hall</h1>
         <p><strong>Description:</strong> {sectionData.description}</p>
