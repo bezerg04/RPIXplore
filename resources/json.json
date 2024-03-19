@@ -4,7 +4,7 @@
         "description" : "Quad (short for Quadrangle Residence Hall Complex) is the oldest and possibly the largest dorm building on campus. Broken up into multiple 'stacks', applying to Quad can mean ending up in any one of the 19 stacks that make up Quad. We've tried our best to gather information about each individual stack as they all differ in some way. Sadly, you can not pick which stack you'd like to live in, however, when your dorm is announced, check back here to see the information about that stack. In general, regardless of which stack you end up in, enjoy living inside of campus, approximately 5-10 minutes away from any class on campus. The nearest dining hall is Russel Sage, newly renovated as of 2023, and the Union lies right across the street.",
         "address" : "1665 15th St, Troy, NY 12180",
         "location" : "In-Campus",
-        "img": "",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/9/97/RPIQuad.jpg",
         "year" : ["Sophomore"],
         "accessible" : false,
         "onebuilding" : false,

@@ -26,7 +26,7 @@ const DormPage = () => {
   return (
     <div>
       <NavBar activeLink="Dorms" />
-      <h1>{dormData ? dormData.name : 'Dorm not found'}</h1>
+      {/* <h1>{dormData ? dormData.name : 'Dorm not found'}</h1> */}
       {dormData && dormData.img ? <Jumbotron imageSrc={dormData.img} /> : <p>Dorm information not available.</p>}
       {dormData && <Sector sectionName={dormData.name}></Sector>}
     </div>
