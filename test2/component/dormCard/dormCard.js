@@ -12,12 +12,12 @@ const DormCard = ({ dormData }) => {
 
   return (
     <div onClick={handleClick}>
-    <Link href={`/indi`} passHref>
-      <Card
-        className="max-w-sm"
-        imgAlt="Meaningful alt text for an image that is not purely decorative"
-        imgSrc={dormImg}
-      >
+  <Link href={`/indi`} passHref>
+    <div className="max-w-sm h-full flex flex-col">
+      <div style={{ height: '66.66%', overflow: 'hidden' }}>
+        <img src={dormImg} alt="Meaningful alt text for an image that is not purely decorative" style={{ width: '100%', height: '100%', objectFit: 'cover' }} className='rounded-t-lg'/>
+      </div>
+      <div className="flex-grow flex flex-col justify-between" style={{ padding: '1rem' }}>
         <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
           {dormName}
         </h5>
@@ -31,9 +31,11 @@ const DormCard = ({ dormData }) => {
           </svg>
           <p className="text-sm">{dormSize} sqft</p>
         </div>
-      </Card>
-    </Link>
+      </div>
     </div>
+  </Link>
+</div>
+
   );
 };
 

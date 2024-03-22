@@ -22,7 +22,7 @@ const DormGrid = () => {
   });
 
   return (
-    <div>
+    <div className="p-4 flex gap-4 justify-normal">
       {dormCards}
     </div>
   );
