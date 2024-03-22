@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Button } from 'flowbite-react';
 import { Carousel } from 'flowbite-react';
+import StatusIcon from './statusIcon';
 
 
 import data from '../../../resources/json.json';
@@ -15,7 +16,7 @@ export default function Sector({ sectionName = 'Quad' }) {
   }
 
   // Destructuring for easier access
-  const { pricing, stacks, description, address, location, accessible, ac, dining, laundryInfo } = sectionData;
+  const { pricing, stacks, description, address, location, accessible, ac, dining, laundryInfo, img } = sectionData;
   
   return (
     <div>
@@ -31,35 +32,45 @@ export default function Sector({ sectionName = 'Quad' }) {
         )}
       </div>
       
-      <div className="flex flex-column">
-      <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
-      <Carousel>
-        <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
-        <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
-        <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
-        <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
-        <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
-      </Carousel>
-    </div>
-        <div>
-            <p><strong>Description:</strong> {description}</p>
-            <p><strong>Address:</strong> {address}</p>
-            <p><strong>Location:</strong> {location}</p>
-            <p><strong>Accessible:</strong> {accessible ? 'Yes' : 'No'}</p>
-            <p><strong>AC Available:</strong> {ac ? 'Yes' : 'No'}</p>
-            <p><strong>Nearest Dining Hall:</strong> {dining}</p>
-            <p><strong>Laundry Info:</strong> Located at {laundryInfo.location} with {laundryInfo.nWashers} washers and {laundryInfo.nDryers} dryers.</p>
-            <p><strong>Pricing:</strong></p>
-              <ul>
-                <li> &emsp; Single: {pricing.single}</li>
-                <li> &emsp; Double: {pricing.double}</li>
-                <li> &emsp; Triple: {pricing.triple}</li>
-              </ul>
-            
-        
+      <div className='flex flex-row'>
+
+        <div className="flex flex-col w-1/2 pl-2 mt-0">
+              <p><strong>Description:</strong> {description}</p>
+              <p><strong>Address:</strong> {address}</p>
+              <p><strong>Location:</strong> {location}</p>
+              <p><strong>Accessible:</strong> {accessible ? 'Yes' : 'No'}</p>
+              <p><strong>AC Available:</strong> {ac ? 'Yes' : 'No'}</p>
+              <p><strong>Nearest Dining Hall:</strong> {dining}</p>
+              <p><strong>Laundry Info:</strong> Located at {laundryInfo.location} with {laundryInfo.nWashers} washers and {laundryInfo.nDryers} dryers.</p>
+              <p><strong>Pricing:</strong></p>
+                <ul>
+                  <li> &emsp; Single: {pricing.single}</li>
+                  <li> &emsp; Double: {pricing.double}</li>
+                  <li> &emsp; Triple: {pricing.triple}</li>
+                </ul>
         </div>
 
+        <div className="w-1/2 p-2 mb-1.5 pb-2.5 h-32">
+          <Carousel>
+            <img src={img} alt="..." />
+            <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
+            <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+              Slide 1
+            </div>
+            <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
+            <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
+            <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
+            <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
+            <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
+            <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
+            <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
+          </Carousel>
+        </div>
+        
+
+
       </div>
+      
 
         
       

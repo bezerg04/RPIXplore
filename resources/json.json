@@ -5,6 +5,7 @@
         "address" : "1665 15th St, Troy, NY 12180",
         "location" : "In-Campus",
         "img": "https://upload.wikimedia.org/wikipedia/commons/9/97/RPIQuad.jpg",
+        "resources" : [],
         "year" : ["Sophomore"],
         "accessible" : false,
         "onebuilding" : false,
@@ -25,7 +26,7 @@
         "pests" : ["Roaches", "Rats"],
         "stacks": [{
             "title" : "Roebling",
-            "description" : "Roebling is the north-eastern most stack of Quad. Like the rest of Quad, Roebling is accessible through the campus facing front door that is keycard locked. Via the third floor, Roebling connects to Pardee's third floor. The bathrooms are cleaned twice a week. The stack is single gender.",
+            "description" : "Roebling is the north-eastern most, corner-building, stack of Quad. Like the rest of Quad, Roebling is accessible through the campus facing front door that is keycard locked. Via the third floor, Roebling connects to Pardee's third floor. The bathrooms are cleaned twice a week. The stack is single gender.",
             "gender" : "single gender",
             "furniture" : {
                 "wardrobe" : "36in x 25in x 72in",
@@ -43,17 +44,20 @@
                     "Single" : {
                         "title" : "Single",
                         "sqft" : "Varying, check floor plan",
-                        "img" : []
+                        "img" : [],
+                        "scan" : []
                     },
                     "Double" : {
                         "title" : "Double",
                         "sqft" : "Varying, check floor plan",
-                        "img" : []
+                        "img" : [],
+                        "scan" : []
                     },
                     "Triple" : {
                         "title" : "Triple",
                         "sqft" : "Varying, check floor plan",
-                        "img" : []
+                        "img" : [],
+                        "scan" : []
                     }
                 }]
             },
@@ -82,12 +86,13 @@
     ]
 
     },
-    "Barton": {
-        "name":"Barton",
+    "Barton Hall": {
+        "name":"Barton Hall",
         "description" : "Barton",
         "address" : "1523 Sage Ave, Troy, NY 12180",
         "location" : "Freshman Hill",
         "img": "https://i.redd.it/campus-appreciation-post-to-try-and-spread-some-positivity-v0-997ot0it1oda1.jpg?width=4032&format=pjpg&auto=webp&s=aed418bee01797297237977d30b896aa20a123f8",
+        "resources" : [],
         "year" : ["Freshman"],
         "accessible" : true,
         "onebuilding" : true,
@@ -124,12 +129,14 @@
                     "Triple" : {
                         "title" : "Triple",
                         "sqft" : "Varying, check floor plan",
-                        "img" : []
+                        "img" : [],
+                        "scan" : []
                     },
                     "Triple Suite" : {
                         "title" : "Triple Suite",
                         "sqft" : "Varying, check floor plan",
-                        "img" : []
+                        "img" : [],
+                        "scan" : []
                     }
                 }]
             },
@@ -154,5 +161,12 @@
             }
         }]
 
+    },
+    "North Hall":{
+
+    },
+    "Warren Hall":{
+        
     }
+
 }
