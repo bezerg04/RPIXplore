@@ -162,11 +162,80 @@
         }]
 
     },
-    "North Hall":{
+    "North Hall": {
+        "name":"North Hall",
+        "description" : "North",
+        "address" : "1102 Sage Ave, Troy, NY 12180",
+        "location" : "In-Campus",
+        "img": "https://i.redd.it/campus-appreciation-post-to-try-and-spread-some-positivity-v0-997ot0it1oda1.jpg?width=4032&format=pjpg&auto=webp&s=aed418bee01797297237977d30b896aa20a123f8",
+        "resources" : [],
+        "year" : ["Freshman"],
+        "accessible" : true,
+        "onebuilding" : true,
+        "laundryInfo" : {
+            "location" : "Second Floor",
+            "nWashers" : 69,
+            "nDryers" : 69
+        },
+        "pricing" : {
+            "triple" : "$9,790"
+        },
+        "ac" : true,
+        "printer" : "Third Floor Study Room",
+        "dining" : "Commons Dining Hall",
+        "blinds" : true,
+        "pests" : ["Spiders"],
+        "stacks": [{
+            "title" : "Barton",
+            "description" : "Barton",
+            "gender" : "mixed",
+            "furniture" : {
+                "wardrobe" : "36in x 25in x 72in",
+                "dresser" : "in x in x in, 3 drawer",
+                "desk" : "48in x 24in x",
+                "deskBookcase" : "34in x 9in x 26in",
+                "deskDrawer" : true,
+                "chair" : true,
+                "mattress" : "Extra Long Twin (36in x 80in x 6in)",
+                "bedHeight" : "Adjustable (max )"
+            },
+            "amenities" : ["Study Rooms", "Lounge Area", "Piano", "Elevator"],
+            "roomInfo" : {
+                "types": [{
+                    "Triple" : {
+                        "title" : "Triple",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : [],
+                        "scan" : []
+                    },
+                    "Triple Suite" : {
+                        "title" : "Triple Suite",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : [],
+                        "scan" : []
+                    }
+                }]
+            },
+            "nFloors" : 4,
+            "bathroomInfo" : {
+                "Hall Bathroom" : {
+                    "toilets" : 3,
+                    "sinks" : 3,
+                    "showers" : 2
+                },
+                "Suite Bathroom" : {
+                    "toilets" : 1,
+                    "sinks" : 1,
+                    "showers" : 1
+                }
+            },
+            "kitchenInfo" : {
+                "microwave" : true,
+                "sink" : true,
+                "fridge" : false,
+                "stove" : false
+            }
+        }]
 
-    },
-    "Warren Hall":{
-        
-    }
-
+    }  
 }
