@@ -19,31 +19,35 @@ const locations = [
         { name: 'Nugent Hall', lat: 42.72754946396228, lng: -73.6750467622503 },
         { name: 'Sharp Hall', lat: 42.72699533480291, lng: -73.67471038624485 },   
         { name: 'Warren Hall', lat: 42.728103106109685, lng: -73.67551709586671 }, 
-        //add more dorms
       ],
     },
     {
       zone: 'In Campus',
       dorms: [
-        { name: 'São Paulo', lat: -23.5505, lng: -46.6333 },
-        { name: 'Rio de Janeiro', lat: -22.9068, lng: -43.1729 },
-        // Add more dorms
+        { name: 'E-Complex', lat: 42.73132065977962, lng: -73.67922250649707 },
+        { name: 'North Hall', lat: 42.73132344989214, lng: -73.67981431606012 },
+        { name: 'Quadrangle Complex (Quad)', lat: 42.73063087581129, lng: -73.67743373544864 } , 
       ],
     },
     {
         zone: 'Past Burdett Ave',
         dorms: [
-          { name: 'São Paulo', lat: -23.5505, lng: -46.6333 },
-          { name: 'Rio de Janeiro', lat: -22.9068, lng: -43.1729 },
-          // Add more dorms
+          { name: 'Bryckwyck Apartments', lat: 42.73473081077628, lng: -73.66373665957707 }, 
+          { name: 'Stacwyck Apartments', lat: 42.73359030110175, lng: -73.66491375820921 },
+          { name: 'Burdett Avenue Residence Hall', lat: 42.7312020555503, lng: -73.67114585835905 },
+          { name: 'Colonie Apartments', lat: 42.736968815384, lng: -73.67011545492971 }, , 
+          { name: 'RAHP A (Colvin and Albright)', lat: 42.731059204758616, lng: -73.66939927922246 },
+          { name: 'RAHP B (Beman and Brinsmade)', lat: 42.73489208402806, lng: -73.66538482113461 },
+          { name: 'Rousseau Apartments', lat: 42.7344063634127, lng: -73.66425207747068 }, 
+          { name: 'Williams Apartments', lat: 42.73395681034878, lng: -73.66452460005917 }
         ],
     },
     {
         zone: 'Down the Hill',
         dorms: [
-          { name: 'São Paulo', lat: -23.5505, lng: -46.6333 },
-          { name: 'Rio de Janeiro', lat: -22.9068, lng: -43.1729 },
-          // Add more dorms
+          { name: 'Blitman Residence Hall', lat: 42.73120026761296, lng: -73.68599472026295 }, 
+          { name: 'City Station', lat: 42.72775594008568, lng: -73.68736374320818 }, 
+          { name: 'Polytechnic Residential Commons', lat: 42.72210326965186, lng: -73.67950083409157 } 
         ],
       },
   ];
