@@ -5,6 +5,7 @@ import Jumbotron from '@/component/jumbotron/page';
 import data from '../../../resources/json.json';
 import Sector from '@/component/sector/page';
 
+
 const DormPage = () => {
   const [dormData, setDormData] = useState(null);
 
@@ -22,6 +23,8 @@ const DormPage = () => {
       console.log('No dorm name found in localStorage.');
     }
   }, []);
+
+
 
   return (
     <div>
