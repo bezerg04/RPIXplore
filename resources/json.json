@@ -167,28 +167,29 @@
         "description" : "North",
         "address" : "1102 Sage Ave, Troy, NY 12180",
         "location" : "In-Campus",
-        "img": "https://i.redd.it/campus-appreciation-post-to-try-and-spread-some-positivity-v0-997ot0it1oda1.jpg?width=4032&format=pjpg&auto=webp&s=aed418bee01797297237977d30b896aa20a123f8",
+        "img": "https://i.imgur.com/IjfTkXV.jpg",
         "resources" : [],
-        "year" : ["Freshman"],
-        "accessible" : true,
+        "year" : ["Sophomore"],
+        "accessible" : false,
         "onebuilding" : true,
         "laundryInfo" : {
-            "location" : "Second Floor",
-            "nWashers" : 69,
-            "nDryers" : 69
+            "location" : "First Floor",
+            "nWashers" : 3,
+            "nDryers" : 6
         },
         "pricing" : {
-            "triple" : "$9,790"
+            "single" : "$9,790",
+            "double" : "$9,790"
         },
         "ac" : true,
-        "printer" : "Third Floor Study Room",
-        "dining" : "Commons Dining Hall",
+        "printer" : "First Floor Lounge",
+        "dining" : "Russel Sage Dining Hall",
         "blinds" : true,
-        "pests" : ["Spiders"],
+        "pests" : ["Roaches", "Mice"],
         "stacks": [{
-            "title" : "Barton",
-            "description" : "Barton",
-            "gender" : "mixed",
+            "title" : "North Hall",
+            "description" : "North Hall",
+            "gender" : "mixed, floor based",
             "furniture" : {
                 "wardrobe" : "36in x 25in x 72in",
                 "dresser" : "in x in x in, 3 drawer",
@@ -199,17 +200,17 @@
                 "mattress" : "Extra Long Twin (36in x 80in x 6in)",
                 "bedHeight" : "Adjustable (max )"
             },
-            "amenities" : ["Study Rooms", "Lounge Area", "Piano", "Elevator"],
+            "amenities" : ["Lounge Area", "Piano"],
             "roomInfo" : {
                 "types": [{
-                    "Triple" : {
-                        "title" : "Triple",
+                    "Single" : {
+                        "title" : "Single",
                         "sqft" : "Varying, check floor plan",
                         "img" : [],
                         "scan" : []
                     },
-                    "Triple Suite" : {
-                        "title" : "Triple Suite",
+                    "Double" : {
+                        "title" : "Double",
                         "sqft" : "Varying, check floor plan",
                         "img" : [],
                         "scan" : []
@@ -219,21 +220,16 @@
             "nFloors" : 4,
             "bathroomInfo" : {
                 "Hall Bathroom" : {
-                    "toilets" : 3,
-                    "sinks" : 3,
-                    "showers" : 2
-                },
-                "Suite Bathroom" : {
                     "toilets" : 1,
-                    "sinks" : 1,
+                    "sinks" : 2,
                     "showers" : 1
                 }
             },
             "kitchenInfo" : {
                 "microwave" : true,
                 "sink" : true,
-                "fridge" : false,
-                "stove" : false
+                "fridge" : true,
+                "stove" : true
             }
         }]
 
