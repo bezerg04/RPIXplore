@@ -37,8 +37,8 @@ const cardContents = [
             key={index}
             className="max-w-xs bg-black"
             renderImage={() => (
-              <div className="flex justify-center">
-                <Image width={200} height={200} src={content.imgSrc} alt={content.imgAlt} />
+              <div className="flex justify-center" style={{ height: '66.66%', overflow: 'hidden' }}>
+                <Image width={200} height={200} src={content.imgSrc} alt={content.imgAlt} style={{  objectFit: 'cover' }}/>
               </div>
             )}
           >
