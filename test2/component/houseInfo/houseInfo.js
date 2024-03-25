@@ -1,9 +1,17 @@
-
+import NavBar from "../navbar/page";
+import { Tabs } from "flowbite-react";
 const House = ({ dormData }) => {
-  const { dormName, dormType, dormLink, dormSize } = dormData; 
 
   return (
-    <div></div>
+    <div> 
+      <div className="w-full border-solid	border-2">
+        <Tabs>
+          <Tabs.Item title= '{}'></Tabs.Item>
+        </Tabs>
+
+      </div>
+      
+    </div>
   );
 };
 

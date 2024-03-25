@@ -4,6 +4,7 @@ import NavBar from '@/component/navbar/page';
 import Jumbotron from '@/component/jumbotron/page';
 import data from '../../../resources/json.json';
 import Sector from '@/component/sector/page';
+import House from '@/component/houseInfo/houseInfo';
 
 const DormPage = () => {
   const [dormData, setDormData] = useState(null);
@@ -29,6 +30,7 @@ const DormPage = () => {
       {/* <h1>{dormData ? dormData.name : 'Dorm not found'}</h1> */}
       {dormData && dormData.img ? <Jumbotron imageSrc={dormData.img} /> : <p>Dorm information not available.</p>}
       {dormData && <Sector sectionName={dormData.name}></Sector>}
+      {dormData && <House dormData={dormData.stacks}></House>}
     </div>
   );
 };
