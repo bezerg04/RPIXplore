@@ -24,6 +24,9 @@
         "dining" : "Russel Sage Dining Hall",
         "blinds" : true,
         "pests" : ["Roaches", "Rats"],
+        "wifi" : true,
+        "ethernet" : true,
+        "parkinglot" : false,
         "stacks": [{
             "title" : "Roebling",
             "description" : "Roebling is the north-eastern most, corner-building, stack of Quad. Like the rest of Quad, Roebling is accessible through the campus facing front door that is keycard locked. Via the third floor, Roebling connects to Pardee's third floor. The bathrooms are cleaned twice a week. The stack is single gender.",
@@ -109,6 +112,9 @@
         "dining" : "Commons Dining Hall",
         "blinds" : true,
         "pests" : ["Spiders"],
+        "wifi" : true,
+        "ethernet" : true,
+        "parkinglot" : true,
         "stacks": [{
             "title" : "Barton",
             "description" : "Barton",
@@ -186,6 +192,9 @@
         "dining" : "Russel Sage Dining Hall",
         "blinds" : true,
         "pests" : ["Roaches", "Mice"],
+        "wifi" : true,
+        "ethernet" : true,
+        "parkinglot" : true,
         "stacks": [{
             "title" : "North Hall",
             "description" : "North Hall",
