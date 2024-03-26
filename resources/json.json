@@ -5,7 +5,10 @@
         "address" : "1665 15th St, Troy, NY 12180",
         "location" : "In-Campus",
         "img": "https://upload.wikimedia.org/wikipedia/commons/9/97/RPIQuad.jpg",
-        "resources" : [],
+        "resources" : [
+            "https://upload.wikimedia.org/wikipedia/commons/9/97/RPIQuad.jpg",
+            "https://rpirooms.files.wordpress.com/2018/05/97l3sw.jpg"
+            ],
         "year" : ["Sophomore"],
         "accessible" : false,
         "onebuilding" : false,
@@ -43,7 +46,7 @@
             },
             "amenities" : [],
             "roomInfo" : {
-                "types": [{
+                "types": {
                     "Single" : {
                         "title" : "Single",
                         "sqft" : "Varying, check floor plan",
@@ -62,7 +65,7 @@
                         "img" : [],
                         "scan" : []
                     }
-                }]
+                }
             },
             "nFloors" : 3,
             "bathroomInfo" : {
@@ -95,7 +98,10 @@
         "address" : "1523 Sage Ave, Troy, NY 12180",
         "location" : "Freshman Hill",
         "img": "https://i.redd.it/campus-appreciation-post-to-try-and-spread-some-positivity-v0-997ot0it1oda1.jpg?width=4032&format=pjpg&auto=webp&s=aed418bee01797297237977d30b896aa20a123f8",
-        "resources" : [],
+        "resources" : [
+            "https://i.redd.it/campus-appreciation-post-to-try-and-spread-some-positivity-v0-997ot0it1oda1.jpg?width=4032&format=pjpg&auto=webp&s=aed418bee01797297237977d30b896aa20a123f8",
+            "https://i.redd.it/campus-appreciation-post-to-try-and-spread-some-positivity-v0-997ot0it1oda1.jpg?width=4032&format=pjpg&auto=webp&s=aed418bee01797297237977d30b896aa20a123f8"
+        ],
         "year" : ["Freshman"],
         "accessible" : true,
         "onebuilding" : true,
@@ -211,7 +217,7 @@
             },
             "amenities" : ["Lounge Area", "Piano"],
             "roomInfo" : {
-                "types": [{
+                "types": {
                     "Single" : {
                         "title" : "Single",
                         "sqft" : "Varying, check floor plan",
@@ -224,7 +230,7 @@
                         "img" : [],
                         "scan" : []
                     }
-                }]
+                }
             },
             "nFloors" : 4,
             "bathroomInfo" : {

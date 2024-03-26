@@ -1,4 +1,5 @@
 'use client'
+//AIzaSyDtT88p17SCFuYEZHvDDiohpIhZl7pmYQ4
 //npm install @react-google-maps/api tailwindcss
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import { useState } from 'react';
@@ -50,10 +51,23 @@ const locations = [
           { name: 'Polytechnic Residential Commons', lat: 42.72210326965186, lng: -73.67950083409157 } 
         ],
       },
-  ];
+];
 
 function MapComponent() {
   const [mapCenter, setMapCenter] = useState({ lat: 42.7298, lng: -73.6789 }); //default RPI
+
+  // Function to generate buttons for dorms of a given zone
+  const generateDormButtons = (zoneIndex) => (
+    locations[zoneIndex].dorms.map((dorm, dormIndex) => (
+      <button
+        key={dormIndex}
+        className="my-2 px-4 py-1 bg-blue-500 text-black rounded hover:bg-blue-700 transition duration-150"
+        onClick={() => setMapCenter({ lat: dorm.lat, lng: dorm.lng })}
+      >
+        {dorm.name}
+      </button>
+    ))
+  );
 
   return (
     <div>
@@ -62,29 +76,39 @@ function MapComponent() {
         <GoogleMap
           mapContainerStyle={containerStyle}
           center={mapCenter}
-          zoom={16} //adjust to change map zoom, higher = closer
+          zoom={16}
         >
           <Marker position={mapCenter} />
         </GoogleMap>
       </LoadScript>
-      <div>
-        {locations.map((zone, zoneIndex) => (
-          <div key={zoneIndex} className="mt-4">
-            <h2 className="text-xl font-semibold">{zone.zone}</h2>
-            <div className="flex flex-col items-start">
-              {zone.dorms.map((dorm, dormIndex) => (
-                <button
-                  key={dormIndex}
-                  className="my-2 px-4 py-2 bg-blue-500 text-black rounded hover:bg-blue-700 transition duration-150"
-                  onClick={() => setMapCenter({ lat: dorm.lat, lng: dorm.lng })}
-                >
-                  {dorm.name}
-                </button>
-              ))}
-            </div>
+      <div className="grid grid-cols-4 md:grid-cols-1 lg:grid-cols-4 gap-6 p-4">
+        <div className="mt-2">
+          <h2 className="text-xl font-semibold text-center">Freshman Hill</h2>
+          <div className="flex flex-col items-center mt-0">
+            {generateDormButtons(0)}
           </div>
-        ))}
+        </div>
+        <div className="mt-2">
+          <h2 className="text-xl font-semibold text-center">In Campus</h2>
+          <div className="flex flex-col items-center mt-0">
+            {generateDormButtons(1)}
+          </div>
+        </div>
+        <div className="mt-2">
+          <h2 className="text-xl font-semibold text-center">Past Burdett Ave</h2>
+          <div className="flex flex-col items-center mt-0">
+            {generateDormButtons(2)}
+          </div>
+        </div>
+        <div className="mt-2">
+          <h2 className="text-xl font-semibold text-center">Down the Hill</h2>
+          <div className="flex flex-col items-center mt-0">
+            {generateDormButtons(3)}
+          </div>
+        </div>
       </div>
+
+      
     </div>
   );
 }
