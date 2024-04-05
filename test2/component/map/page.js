@@ -72,7 +72,7 @@ function MapComponent() {
   return (
     <div>
       <h1 className="text-2xl font-bold text-left mt-6 mb-2 ml-6">Interactive Map</h1>
-      <LoadScript googleMapsApiKey="AIzaSyDtT88p17SCFuYEZHvDDiohpIhZl7pmYQ4">
+      <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}>
         <GoogleMap
           mapContainerStyle={containerStyle}
           center={mapCenter}
