@@ -11,6 +11,7 @@ const DormGrid = ({ setIsLoading }) => {
   }, [setIsLoading]); // Dependency array ensures this runs only once on mount
 
   const dormCards = Object.entries(buildingsData).map(([buildingName, buildingDetails]) => {
+    // Check if there are multiple buildings in the stacks
     console.log("Num building", buildingDetails.stacks.length);
     const hasMultipleBuildings = buildingDetails.stacks.length > 1;
 
