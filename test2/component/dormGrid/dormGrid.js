@@ -18,7 +18,7 @@ const DormGrid = ({ setIsLoading }) => {
       dormName: buildingName,
       dormType: hasMultipleBuildings
         ? "Multiple buildings"
-        : buildingDetails.stacks[0].roomInfo.types.map(type => Object.keys(type).join(", ")).join(", "),
+        : Object.keys(buildingDetails.stacks[0].roomInfo.types).join(", "),
       dormImg: buildingDetails.img,
       dormLink: `/${buildingName.toLowerCase()}`,
     };
