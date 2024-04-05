@@ -30,7 +30,7 @@ const DormPage = () => {
       {/* <h1>{dormData ? dormData.name : 'Dorm not found'}</h1> */}
       {dormData && dormData.img ? <Jumbotron imageSrc={dormData.img} /> : <p>Dorm information not available.</p>}
       {dormData && <Sector sectionName={dormData.name}></Sector>}
-      {dormData && <House dormData={dormData.stacks}></House>}
+      {dormData && <House dormData={dormData.stacks[0]}></House>}
     </div>
   );
 };

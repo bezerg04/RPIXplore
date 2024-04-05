@@ -131,7 +131,7 @@
             },
             "amenities" : ["Study Rooms", "Lounge Area", "Piano", "Elevator"],
             "roomInfo" : {
-                "types": [{
+                "types": {
                     "Triple" : {
                         "title" : "Triple",
                         "sqft" : "Varying, check floor plan",
@@ -144,7 +144,7 @@
                         "img" : [],
                         "scan" : []
                     }
-                }]
+                }
             },
             "nFloors" : 4,
             "bathroomInfo" : {

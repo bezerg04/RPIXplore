@@ -5,14 +5,13 @@ import buildingsData from '../../../resources/json.json'
 const DormGrid = () => {
   const dormCards = Object.entries(buildingsData).map(([buildingName, buildingDetails]) => {
     // Check if there are multiple buildings in the stacks
-    console.log("Num building",buildingDetails.stacks.length)
     const hasMultipleBuildings = buildingDetails.stacks.length > 1;
 
     const exampleDormData = {
       dormName: buildingName,
       dormType: hasMultipleBuildings
         ? "Multiple buildings"
-        : buildingDetails.stacks[0].roomInfo.types.map(type => Object.keys(type).join(", ")).join(", "),
+        : Object.keys(buildingDetails.stacks[0].roomInfo.types).join(", "),
       dormImg: buildingDetails.img,
       //dormSize: !hasMultipleBuildings && buildingDetails.stacks[0].roomInfo.types[0].Triple.sqft,
       dormLink: `/${buildingName.toLowerCase()}`,
