@@ -12,7 +12,7 @@ import jumbopic from '@/component/jumbotron/jumbopic.png'
 export default function Home() {
   return (
     <div>
-      <NavBar></NavBar>
+      <NavBar activeLink="Home" />
       <Jumbotron imageSrc={jumbopic.src} />
       <Welcome></Welcome>
       <Tritiles></Tritiles>

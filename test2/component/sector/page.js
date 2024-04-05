@@ -16,7 +16,7 @@ export default function Sector({ sectionName = 'Quad' }) {
   }
 
   // Destructuring for easier access
-  const { pricing, stacks, description, address, location, accessible, ac, dining, laundryInfo, img } = sectionData;
+  const { pricing, stacks, description, address, location, accessible, ac, dining, laundryInfo, img, resources  } = sectionData;
   
   return (
     <div>
@@ -50,22 +50,19 @@ export default function Sector({ sectionName = 'Quad' }) {
                 </ul>
         </div>
 
-        <div className="w-1/2 p-2 mb-1.5 pb-2.5 h-32">
-          <Carousel>
-            <img src={img} alt="..." />
-            <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
-            <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
-              Slide 1
-            </div>
-            <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
-            <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
-            <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
-            <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
-            <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
-            <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
-            <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
-          </Carousel>
-        </div>
+        {resources && resources.length > 0 ? (
+          <div className="w-1/2 p-2 mb-1.5 pb-2.5 h-32">
+            <Carousel>
+              {resources.map((resource, index) => (
+                <img key={index} src={resource} alt={`Resource ${index + 1}`} className='w-auto h-full object-fit'/>
+              ))}
+            </Carousel>
+          </div>
+        ) : (
+          <div className="w-1/2 p-2 mb-1.5 pb-2.5 h-32">
+            <img src={img} alt="Default" />
+          </div>
+        )}
         
 
 
