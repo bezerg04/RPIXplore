@@ -63,14 +63,7 @@ export default function Sector({ sectionName = 'Quad' }) {
             <img src={img} alt="Default" />
           </div>
         )}
-        
-
-
       </div>
-      
-
-        
-      
     </div>
   );
 }
