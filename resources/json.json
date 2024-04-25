@@ -143,7 +143,7 @@
                         "sqft" : "Varying, check floor plan",
                         "img" : ["https://i.redd.it/campus-appreciation-post-to-try-and-spread-some-positivity-v0-997ot0it1oda1.jpg?width=4032&format=pjpg&auto=webp&s=aed418bee01797297237977d30b896aa20a123f8",
                     "https://i.redd.it/campus-appreciation-post-to-try-and-spread-some-positivity-v0-997ot0it1oda1.jpg?width=4032&format=pjpg&auto=webp&s=aed418bee01797297237977d30b896aa20a123f8"],
-                        "scan" : []
+                        "scan" : ["poly.glb"]
                     },
                     "Triple Suite" : {
                         "title" : "Triple Suite",

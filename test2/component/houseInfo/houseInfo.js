@@ -2,8 +2,12 @@ import NavBar from "../navbar/page";
 import { Tabs } from "flowbite-react";
 import { Card } from "flowbite-react";
 import { Carousel } from "flowbite-react";
+import { useEffect } from "react";
+// import poly from "../../scans/poly.glb";
 
 const House = ({ dormData }) => {
+  useEffect(() => { import('@google/model-viewer').catch(console.error); }, []);
+
   console.log(dormData)
   console.log(dormData.roomInfo)
   const roomTabs = Object.entries(dormData.roomInfo.types).map(([roomType,roomData])=>{
@@ -17,13 +21,13 @@ const House = ({ dormData }) => {
             <div className="h-36">
               <Carousel>
                 {roomData.img.map((image, index) => (
-                  <img key={index} src={image} alt={`Resource ${index + 1}`} className="w-full h-full object-cover"/>
+                  <img key={index} src={image} alt={`Resource ${index + 1}`} className="w-full  object-contain"/>
                 ))}
               </Carousel>
             </div>
           ) : (
             <div className=" ">
-              <img src={roomData.img} alt="Default" className="w-full h-36 object-cover"/>
+              <img src={roomData.img} alt="Default" className="w-full h-36 object-contain"/>
             </div>
           )}
           </div>
@@ -34,7 +38,12 @@ const House = ({ dormData }) => {
             <h5 className="text-lg font-bold">Scans</h5>
             <div className="flex space-x-4 overflow-x-auto">
               {roomData.scan.length > 0 ? roomData.scan.map((scan, index) => (
-                <img key={index} src={scan} alt={`${roomType} scan ${index + 1}`} className="h-48 w-auto" />
+                // <p>model</p>
+                <model-viewer 
+                src="../../scans/poly.glb"
+                key={index} 
+                className="model-viewer" 
+                ar camera-controls></model-viewer>
               )) : <p>No scans available.</p>}
             </div>
           </Card>
