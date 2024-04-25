@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import NavBar from '@/component/navbar/page';
 import DormGrid from '@/component/dormGrid/dormGrid';
-import { Spinner } from "flowbite-react";
+import { Footer, Spinner } from "flowbite-react";
 
 export default function Home() {
   // State to track if the content is loading
