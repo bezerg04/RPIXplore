@@ -5,7 +5,7 @@ const House = ({ tabData }) => {
   return (
     <div> 
       <div className="w-full border-solid	border-2">
-        <Tabs>
+        <Tabs aria-label="Tabs with underline" style="underline">
           <Tabs.Item title= '{}'></Tabs.Item>
         </Tabs>
 
