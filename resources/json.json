@@ -180,7 +180,7 @@
         "description" : "North",
         "address" : "1102 Sage Ave, Troy, NY 12180",
         "location" : "In-Campus",
-        "img": "https://i.imgur.com/IjfTkXV.jpg",
+        "img": "https://i.imgur.com/SiBSBOE.jpg",
         "resources" : [],
         "year" : ["Sophomore"],
         "accessible" : false,
@@ -222,12 +222,16 @@
                     "Single" : {
                         "title" : "Single",
                         "sqft" : "Varying, check floor plan",
-                        "img" : [],
+                        "img" : ["https://i.imgur.com/SiBSBOE.jpg",
+                        "https://i.imgur.com/SiBSBOE.jpg"
+                        
+                                
+                                ],
                         "scan" : []
                     },
                     "Double" : {
                         "title" : "Double",
-                        "sqft" : "Varying, check floor plan",
+                        "sqft" : "Varying, check floor plan 2",
                         "img" : [],
                         "scan" : []
                     }
@@ -249,5 +253,5 @@
             }
         }]
 
-    }  
+    }
 }

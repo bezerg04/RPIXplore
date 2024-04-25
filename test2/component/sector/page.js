@@ -52,10 +52,10 @@ export default function Sector({ sectionName = 'Quad' }) {
         </div>
 
         {resources && resources.length > 0 ? (
-          <div className="w-1/2 p-2 mb-1.5 pb-2.5 h-32">
+          <div className=" p-2 mb-1.5 pb-2.5 h-full">
             <Carousel>
               {resources.map((resource, index) => (
-                <img key={index} src={resource} alt={`Resource ${index + 1}`} className='w-auto h-full object-fit'/>
+                <img key={index} src={resource} alt={`Resource ${index + 1}`} className=' h-full object-fit'/>
               ))}
             </Carousel>
           </div>

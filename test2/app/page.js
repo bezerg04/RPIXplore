@@ -8,6 +8,7 @@ import Welcome from '@/component/welcome/page';
 import Tritiles from '@/component/tritiles/page';
 import MapComponent from '@/component/map/page';
 import jumbopic from '@/component/jumbotron/jumbopic.png'
+import { NewFooter } from '@/component/footer/footer';
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       <Welcome></Welcome>
       <Tritiles></Tritiles>
       <MapComponent></MapComponent>
+      <NewFooter/>
     </div>
-   
   );
 }
