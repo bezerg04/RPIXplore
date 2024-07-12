@@ -40,12 +40,19 @@ const cardContents = [
             key={index}
             className="max-w-xs bg-black"
             renderImage={() => (
-              <div className="flex justify-center" style={{ height: '66.66%', overflow: 'hidden' }}>
-                <Image width={300} height={200} src={content.imgSrc} alt={content.imgAlt} style={{  objectFit: 'cover' }}/>
+              <div className="w-full h-full" style={{ height: '100%', overflow: 'hidden' }}>
+                <Image
+                  width={300}
+                  height={200}
+                  src={content.imgSrc}
+                  alt={content.imgAlt}
+                  className="w-full h-full rounded-lg"
+                  style={{ objectFit: 'cover' }}
+                />
               </div>
             )}
           >
-            <h5 className="text-2xl font-bold tracking-tight text-black dark:text-white mb-0">{content.title}</h5>
+            <h5 className="text-2xl font-bold text-black">{content.title}</h5>
             <p className="font-normal text-gray-700 dark:text-gray-400 mb-0">
               {content.description}
             </p>

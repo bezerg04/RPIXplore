@@ -1,6 +1,7 @@
 'use client';
 import { Card } from 'flowbite-react';
 import Link from 'next/link';
+import '../../app/globals.css';
 
 const DormCard = ({ dormData }) => {
   const { dormName, dormType, dormImg, dormSize, dormLink } = dormData; 
@@ -13,7 +14,7 @@ const DormCard = ({ dormData }) => {
   return (
     <div onClick={handleClick}>
   <Link href={`/indi`} passHref>
-    <div className="max-w-sm h-full flex flex-col border border-gray-200 rounded-lg shadow hover:bg-gray-100">
+    <div className="max-w-sm h-full flex flex-col border border-gray-200 rounded-lg shadow Inter hover:bg-gray-100">
       <div style={{ height: '66.66%', overflow: 'hidden' }}>
         <img src={dormImg} alt="Meaningful alt text for an image that is not purely decorative" style={{ width: '100%', height: '100%', objectFit: 'cover' }} className='rounded-t-lg'/>
       </div>
