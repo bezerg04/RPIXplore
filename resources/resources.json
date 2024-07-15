@@ -10,11 +10,6 @@
         "content": "'Your Name'\n RPI Residence Hall & Room Number\n 1999 Burdett Ave.\n Troy, NY 12180"
     },
     {
-        "category": "Mail/Directions",
-        "title": "How to forward mail?",
-        "content": "To forward mail, fill out the forwarding form available at the mailroom or on the RPI website."
-    },
-    {
         "category": "Dining",
         "title": "What are the dining hall hours?",
         "content": "The dining hall hours vary by location. Commons and Sage dining halls are open from 7 AM to 9 PM on weekdays and 9 AM to 7 PM on weekends."
@@ -52,6 +47,12 @@
     {
         "category": "Housing",
         "title": "How do I report a maintenance issue?",
-        "content": "Maintenance issues can be reported through the online maintenance request form on the RPI website or by contacting the residence hall staff."
+        "content": "Maintenance issues can be reported through the online maintenance request form on the RPI website (https://info.rpi.edu/facilities-management) or by contacting the residence hall staff."
+    },
+    {
+        "category": "Housing",
+        "title": "Prohibited Items",
+        "content": "(https://sll.rpi.edu/prohibited-items)\nThe following items are prohibited in all Rensselaer owned and operated residence halls. Prohibited items found in residence halls may be subject to confiscation/removal by institute staff.\n\nDecorations\n\nCandles (whether lit or unlit), incense, scented lamps, and open flame devices of any kind\nLive trees\nCurtains and cloth-based or fabric tapestries/wall hangings.\nEntire walls and doors may not be covered. All decorations must be affixed flat against the walls so that flames cannot reach both sides. Each wall and door cannot exceed 10% covered\n\nElectronics (Non-Kitchen)\n\n3D printers\nHover boards\nAir Conditioners (portable or window)\nSpace heaters, electric blankets, sun lamps\nString lights, strip lights, Battery powered string lights are allowed\nHalogen lamps, and halogen light bulbs\nRouters/Antennas/Satellite dishes\nWax warmers (all including lightbulb, hot plate, and plug-in mechanisms)\nSoldering Irons and all appliances/tools with exposed heating elements\n\nElectronic Components\n\nExtension cords\nMulti-tap outlet adaptors\nPower strips are permitted only if they:\n\tare approved by a current Nationally Recognized Testing Laboratory (NRTL). Certification mark must be visible on power strip\n\thave a visible and functioning \"grounded\" and \"protected\" light\n\thave a visible reset switch (must be labeled reset)\n\thave no movable parts\n\tare plugged directly into a wall outlet. Power strips cannot be connected to another power strip/desk outlet (\"daisy chain\" or \"piggy-backing\")\n\nKitchen Appliances/Cooking\n\nAppliances that are not approved by a current Nationally Recognized Testing Laboratory (NRTL). Certification mark must be visible on the appliance.\nAppliances that contain an exposed heating element are not permitted. This includes, but is not limited to, hot plates, crock pots, Instant Pots, air fryers, George Foreman grills, rice cookers, electric skillets, or any appliances without a thermostat/automatic shut off. Toasters ovens are not permitted in any area.\nPop-up toasters are permitted in kitchens. Automatic shut-off coffee/tea makers, and microwaves ARE permitted.\nHibachis, other open fire grills, charcoal, and gas/propane grills.\nKerosene, gasoline, butane, or other flammable liquids.\nRefrigerators and micro-fridges are permitted providing they are:\n\tadequately ventilated\n\t6.0 cu. ft. or less in size\n\tplugged directly into a wall outlet.\nStudents may bring their own or rent from the refrigerator leasing company under contract with Rensselaer.\n\nMiscellaneous Items\n\nBed risers\nPrivacy bed tents\nFirearms (including antique guns), explosives and other weapons, ammunition, fireworks, starting pistols, incendiary or toxic chemicals, paintball equipment, air rifles, bb pellets, dart guns, torches, stun guns, swords, knives, or any other type of weapon or projectile-firing device. The use of pepper aerosol spray for anything other than self-defense purposes is prohibited\nPets (except fish with a 10 gallon tank size limit); registered service animals, and emotional support animals (that have been approved by Student Health Services) are exempt\nGasoline/fuel powered engines and parts"
     }
+    
 ]

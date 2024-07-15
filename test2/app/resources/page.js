@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import React, { useState, useEffect } from "react";
 import NavBar from "@/component/navbar/page";
 import { Footer, Accordion } from "flowbite-react";
@@ -20,11 +20,20 @@ const highlightText = (text, query) => {
     );
 };
 
-// Function to handle new lines
-const handleNewLines = (text) => {
+// Function to convert URLs to clickable links and handle new lines
+const handleText = (text) => {
+    const urlRegex = /(https?:\/\/[^\s]+[^.,:;\"')\s])/g;
     return text.split("\n").map((item, index) => (
         <React.Fragment key={index}>
-            {item}
+            {item.split(urlRegex).map((part, partIndex) => 
+                urlRegex.test(part) ? (
+                    <a key={partIndex} href={part} className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">
+                        {part}
+                    </a>
+                ) : (
+                    part
+                )
+            )}
             <br />
         </React.Fragment>
     ));
@@ -41,34 +50,34 @@ export default function Resources() {
             return;
         }
 
-    const lowercasedQuery = searchQuery.toLowerCase();
-    const queryWords = lowercasedQuery.split(" ").filter((word) => word);
+        const lowercasedQuery = searchQuery.toLowerCase();
+        const queryWords = lowercasedQuery.split(" ").filter((word) => word);
 
-    const filtered = data.filter((item) => {
-        return queryWords.some(
-            (word) =>
-                item.title.toLowerCase().includes(word) ||
-                item.content.toLowerCase().includes(word)
-        );
-    });
+        const filtered = data.filter((item) => {
+            return queryWords.some(
+                (word) =>
+                    item.title.toLowerCase().includes(word) ||
+                    item.content.toLowerCase().includes(word)
+            );
+        });
 
-    setFilteredData(filtered);
+        setFilteredData(filtered);
     }, [searchQuery]);
 
     const groupedData = filteredData.reduce((acc, item) => {
         if (!acc[item.category]) {
             acc[item.category] = [];
         }
-    acc[item.category].push(item);
-    return acc;
+        acc[item.category].push(item);
+        return acc;
     }, {});
 
     const togglePanel = (category, index) => {
         setOpenPanels((prev) => ({
             ...prev,
             [category]: {
-            ...prev[category],
-            [index]: !prev[category]?.[index],
+                ...prev[category],
+                [index]: !prev[category]?.[index],
             },
         }));
     };
@@ -78,11 +87,11 @@ export default function Resources() {
             <NavBar activeLink="Resources" />
             <div className="container mx-auto p-4">
                 <input
-                type="text"
-                placeholder="Search resources..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="mb-4 p-2 border border-gray-300 rounded w-full"
+                    type="text"
+                    placeholder="Search resources..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="mb-4 p-2 border border-gray-300 rounded w-full"
                 />
                 {Object.keys(groupedData).map((category, catIndex) => (
                     <div key={catIndex} className="mb-6">
@@ -97,7 +106,7 @@ export default function Resources() {
                                         {openPanels[category]?.[index] && (
                                             <Accordion.Content>
                                                 <p className="text-gray-500 dark:text-gray-400 Inter">
-                                                    {handleNewLines(highlightText(item.content, searchQuery))}
+                                                    {handleText(highlightText(item.content, searchQuery))}
                                                 </p>
                                             </Accordion.Content>
                                         )}
@@ -108,7 +117,7 @@ export default function Resources() {
                     </div>
                 ))}
             </div>
-        <Footer />
-    </div>
+            <Footer />
+        </div>
     );
 }
