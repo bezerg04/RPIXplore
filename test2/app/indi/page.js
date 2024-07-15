@@ -27,10 +27,19 @@ const DormPage = () => {
   return (
     <div>
       <NavBar activeLink="Dorms" />
-      {/* <h1>{dormData ? dormData.name : 'Dorm not found'}</h1> */}
       {dormData && dormData.img ? <Jumbotron imageSrc={dormData.img} /> : <p>Dorm information not available.</p>}
       {dormData && <Sector sectionName={dormData.name}></Sector>}
-      {dormData && <House dormData={dormData.stacks[0]}></House>}
+      {dormData && dormData.stacks && dormData.stacks.length > 0 ? (
+        <div>
+          {dormData.stacks.map((stack, index) => (
+            <div key={index} id={`stack-${index}`}>
+              <House dormData={stack}></House>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <House dormData={dormData}></House>
+      )}
     </div>
   );
 };

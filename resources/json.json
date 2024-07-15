@@ -83,11 +83,56 @@
             }
         },
         {
-            
-            "title":"Pardee"
-
-                
-            
+            "title" : "Pardee",
+            "description" : "Roebling is the north-eastern most, corner-building, stack of Quad. Like the rest of Quad, Roebling is accessible through the campus facing front door that is keycard locked. Via the third floor, Roebling connects to Pardee's third floor. The bathrooms are cleaned twice a week. The stack is single gender.",
+            "gender" : "single gender",
+            "furniture" : {
+                "wardrobe" : "36in x 25in x 72in",
+                "dresser" : "in x in x in, 3 drawer",
+                "desk" : "48in x 24in x",
+                "deskBookcase" : "34in x 9in x 26in",
+                "deskDrawer" : true,
+                "chair" : true,
+                "mattress" : "Extra Long Twin (36in x 80in x 6in)",
+                "bedHeight" : "Adjustable (max )"
+            },
+            "amenities" : [],
+            "roomInfo" : {
+                "types": {
+                    "Single" : {
+                        "title" : "Single",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : [],
+                        "scan" : []
+                    },
+                    "Double" : {
+                        "title" : "Double",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : [],
+                        "scan" : []
+                    },
+                    "Triple" : {
+                        "title" : "Triple",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : [],
+                        "scan" : []
+                    }
+                }
+            },
+            "nFloors" : 3,
+            "bathroomInfo" : {
+                "Hall Bathroom" : {
+                    "toilets" : 2,
+                    "sinks" : 3,
+                    "showers" : 2
+                }
+            },
+            "kitchenInfo" : {
+                "microwave" : true,
+                "sink" : true,
+                "fridge" : true,
+                "stove" :true
+            }
         }
     ]
 
@@ -145,7 +190,7 @@
                     "https://i.redd.it/campus-appreciation-post-to-try-and-spread-some-positivity-v0-997ot0it1oda1.jpg?width=4032&format=pjpg&auto=webp&s=aed418bee01797297237977d30b896aa20a123f8"],
                         "scan" : ["poly.glb"]
                     },
-                    "Triple Suite" : {
+                    "TripleSuite" : {
                         "title" : "Triple Suite",
                         "sqft" : "Varying, check floor plan",
                         "img" : [],
