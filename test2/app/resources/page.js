@@ -1,9 +1,12 @@
 'use client';
 import React, { useState, useEffect } from "react";
 import NavBar from "@/component/navbar/page";
+import Jumbotron from "@/component/jumbotron/page";
 import { Footer, Accordion } from "flowbite-react";
 import data from "../../../resources/resources.json";
 import "../globals.css";
+import wonder from "./wonder.jpeg";
+import w from "./w.jpeg";
 
 // Function to highlight the search term
 const highlightText = (text, query) => {
@@ -22,6 +25,7 @@ const highlightText = (text, query) => {
 
 // Function to convert URLs to clickable links and handle new lines
 const handleText = (text) => {
+    if (typeof text !== 'string') return text; // Ensure text is a string
     const urlRegex = /(https?:\/\/[^\s]+[^.,:;\"')\s])/g;
     return text.split("\n").map((item, index) => (
         <React.Fragment key={index}>
@@ -85,6 +89,7 @@ export default function Resources() {
     return (
         <div>
             <NavBar activeLink="Resources" />
+            <Jumbotron imageSrc={wonder.src} /> 
             <div className="container mx-auto p-4">
                 <input
                     type="text"
