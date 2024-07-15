@@ -1,0 +1,57 @@
+[
+    {
+        "category": "Mail/Directions",
+        "title": "Where is the mailroom?",
+        "content": "The mailroom is located on the bottom (first) floor of the Union Building."
+    },
+    {
+        "category": "Mail/Directions",
+        "title": "Shipping Information",
+        "content": "'Your Name'\n RPI Residence Hall & Room Number\n 1999 Burdett Ave.\n Troy, NY 12180"
+    },
+    {
+        "category": "Mail/Directions",
+        "title": "How to forward mail?",
+        "content": "To forward mail, fill out the forwarding form available at the mailroom or on the RPI website."
+    },
+    {
+        "category": "Dining",
+        "title": "What are the dining hall hours?",
+        "content": "The dining hall hours vary by location. Commons and Sage dining halls are open from 7 AM to 9 PM on weekdays and 9 AM to 7 PM on weekends."
+    },
+    {
+        "category": "Dining",
+        "title": "Where can I use my meal plan?",
+        "content": "Meal plans can be used at Commons, Sage, Blitman Dining Hall, and various retail locations across campus."
+    },
+    {
+        "category": "General Information",
+        "title": "What is Rensselaer Polytechnic Institute?",
+        "content": "Rensselaer Polytechnic Institute (RPI) is a private research university located in Troy, New York, known for its engineering, science, and technology programs."
+    },
+    {
+        "category": "General Information",
+        "title": "What resources are available for academic support?",
+        "content": "RPI offers various academic support resources including the Advising and Learning Assistance Center (ALAC), tutoring services, and writing assistance."
+    },
+    {
+        "category": "Transportation",
+        "title": "Where can I find the shuttle schedule?",
+        "content": "The shuttle schedule is available on the RPI website and at shuttle stops around campus."
+    },
+    {
+        "category": "Transportation",
+        "title": "How do I get a parking permit?",
+        "content": "Parking permits can be obtained through the Parking and Transportation office located in the Public Safety Building."
+    },
+    {
+        "category": "Housing",
+        "title": "What should I bring to my dorm?",
+        "content": "A recommended packing list includes bedding, toiletries, a desk lamp, and personal items. Check the RPI website for a full list of suggested items."
+    },
+    {
+        "category": "Housing",
+        "title": "How do I report a maintenance issue?",
+        "content": "Maintenance issues can be reported through the online maintenance request form on the RPI website or by contacting the residence hall staff."
+    }
+]

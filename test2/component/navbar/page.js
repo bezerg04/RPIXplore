@@ -20,7 +20,7 @@ export default function NavBar({ activeLink }) {
         <Navbar.Link as={Link} href="/forum" active={activeLink === 'Forum'} className="Inter text-base">
           Forum
         </Navbar.Link>
-        <Navbar.Link href="/" active={activeLink === 'Resources'} className="Inter text-base">
+        <Navbar.Link href="/resources" active={activeLink === 'Resources'} className="Inter text-base">
           Resources
         </Navbar.Link>
         <Navbar.Link href="/dorms" active={activeLink === 'Dorms'} className="Inter text-base">
