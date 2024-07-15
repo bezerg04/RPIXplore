@@ -36,7 +36,7 @@ export default function Sector({ sectionName = 'Quad' }) {
 
       <div className='flex flex-row'>
         <div className="flex flex-col w-1/2 pl-2 mt-0 Inter">
-          <h1 className='font-bold font-black text-xl '>{sectionName}</h1>
+          <h1 className='font-bold text-xl '>{sectionName}</h1>
 
           <p><strong>Description:</strong> {description}</p>
           <p><strong>Address:</strong> {address}</p>
