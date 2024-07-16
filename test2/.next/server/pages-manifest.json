@@ -2,8 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/": "pages/index.js",
-  "/indi": "pages/indi.js",
   "/dorms": "pages/dorms.js",
+  "/indi": "pages/indi.js",
   "/resources": "pages/resources.js",
   "/layout": "pages/layout.js",
   "/_document": "pages/_document.js"
