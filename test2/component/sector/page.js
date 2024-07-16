@@ -2,8 +2,7 @@
 import { useState } from 'react';
 import { Button } from 'flowbite-react';
 import { Carousel } from 'flowbite-react';
-import '../../app/globals.css';
-import data from '../../../resources/json.json';
+import data from '../../resources/json.json';
 
 export default function Sector({ sectionName = 'Quad' }) {
   const sectionData = data[sectionName];

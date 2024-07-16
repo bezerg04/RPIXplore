@@ -1,7 +1,6 @@
 'use client';
 import { Card } from 'flowbite-react';
 import Link from 'next/link';
-import '../../app/globals.css';
 
 const DormCard = ({ dormData }) => {
   const { dormName, dormType, dormImg, dormSize, dormLink } = dormData; 

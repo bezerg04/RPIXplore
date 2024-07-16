@@ -1,5 +1,4 @@
 import { Tabs, Carousel } from "flowbite-react";
-import '../../app/globals.css';
 import { HiOutlineUser, HiOutlineUsers, HiOutlineUserGroup } from "react-icons/hi2";
 import { LiaUsersSolid } from "react-icons/lia";
 

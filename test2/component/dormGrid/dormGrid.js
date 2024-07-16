@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect } from "react";
 import DormCard from "../dormCard/dormCard";
-import buildingsData from '../../../resources/json.json';
+import buildingsData from '../../resources/json.json';
 
 // Add setIsLoading to the component's props
 const DormGrid = ({ setIsLoading }) => {
