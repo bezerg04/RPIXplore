@@ -1,7 +1,12 @@
 [build]
-  base = "/test2"
-  publish = ".next"
+  base = "test2" 
+  publish = "test2/.next"
   command = "npm run build"
 
 [functions]
-  directory = "/test2/netlify/functions"
+  directory = "test2/netlify/functions"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
