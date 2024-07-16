@@ -1,10 +1,10 @@
 [build]
   base = "test2" 
-  publish = "test2/.next"
+  publish = ".next"
   command = "npm run build"
 
 [functions]
-  directory = "test2/netlify/functions"
+  directory = "netlify/functions"
 
 [[redirects]]
   from = "/*"
