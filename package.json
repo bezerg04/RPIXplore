@@ -2,7 +2,7 @@
   "name": "test2",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://main--precious-taffy-970444.netlify.app",
+  "homepage": "https://main--precious-taffy-970444.netlify.app",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@google/model-viewer": "^3.5.0",
+    "@netlify/plugin-nextjs": "^5.5.1",
     "@react-google-maps/api": "^2.19.3",
     "flowbite": "^2.3.0",
     "flowbite-react": "^0.7.2",
