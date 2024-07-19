@@ -20,7 +20,7 @@ const cardContents = [
       buttonText: "FAQ and Resources",
       imgAlt: "image 2",
       imgSrc: search, // Assign a different imported image for the second card
-      href: "#",
+      href: "../resources",
     },
     {
       title: "Dorms",
