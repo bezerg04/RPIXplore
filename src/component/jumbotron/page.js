@@ -1,12 +1,17 @@
 'use client';
-import Link from 'next/link';
+import Image from 'next/image';
 
 const Jumbotron = ({ imageSrc }) => {
   return (
     <div className="relative w-full" style={{ paddingTop: '33.333%' }}> 
-      <img src={imageSrc} alt="barton hall" className="absolute top-0 left-0 w-full h-full object-cover" />
+      <Image
+        src={imageSrc}
+        alt="barton hall"
+        layout="fill"
+        objectFit="cover"
+        className="absolute top-0 left-0"
+      />
     </div>
-    
   );
 };
 

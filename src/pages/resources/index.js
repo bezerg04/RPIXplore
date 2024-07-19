@@ -6,6 +6,7 @@ import { Footer, Accordion } from "flowbite-react";
 import data from "../../../resources/resources.json";
 import wonder from "./wonder.jpeg";
 import w from "./w.jpeg";
+import hi from "./hi.jpg"
 
 // Function to highlight the search term
 const highlightText = (text, query) => {
@@ -88,7 +89,7 @@ export default function Resources() {
     return (
         <div>
             <NavBar activeLink="Resources" />
-            <Jumbotron imageSrc={wonder.src} /> 
+            <Jumbotron imageSrc={hi.src} /> 
             <div className="container mx-auto p-4">
                 <input
                     type="text"
