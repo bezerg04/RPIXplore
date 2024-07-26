@@ -16,18 +16,16 @@ export default function NavBar({ activeLink }) {
         <Navbar.Link href="/" active={activeLink === 'Home'} className="Inter text-base">
           Home
         </Navbar.Link>
+        <Navbar.Link as={Link} href="/dorms" active={activeLink === 'Dorms'} className="Inter text-base">
+          Dorms
+        </Navbar.Link>
         <Navbar.Link as={Link} href="/forum" active={activeLink === 'Forum'} className="Inter text-base">
           Forum
         </Navbar.Link>
         <Navbar.Link as={Link} href="/resources" active={activeLink === 'Resources'} className="Inter text-base">
           Resources
         </Navbar.Link>
-        <Navbar.Link as={Link} href="/dorms" active={activeLink === 'Dorms'} className="Inter text-base">
-          Dorms
-        </Navbar.Link>
-        <Navbar.Link as={Link} href="#" active={activeLink === 'Login'} className="Inter text-base">
-          Login
-        </Navbar.Link>
+        
       </Navbar.Collapse>
     </Navbar>
   );

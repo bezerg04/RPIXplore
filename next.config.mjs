@@ -20,6 +20,14 @@ const nextConfig = {
     ],
   },
   pageExtensions: ['js', 'jsx'],
+  async rewrites() {
+    return [
+      {
+        source: '/api/:path*',
+        destination: 'http://localhost:3000/api/:path*', // Adjust according to your setup
+      },
+    ];
+  },
 };
 
 export default nextConfig;
