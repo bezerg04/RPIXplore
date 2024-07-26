@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
+    domains: ['https://vermillion-pithivier-69ffa0.netlify.app/'],
     remotePatterns: [
       {
         protocol: 'https',
