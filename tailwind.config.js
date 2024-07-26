@@ -1,10 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/pages/*.{js,ts,jsx,tsx,mdx}",
-    "./src/component/**/*.{js,ts,jsx,tsx,mdx}",
-    'node_modules/flowbite-react/**/*.js',
+    "./src/**/*.{js,ts,jsx,tsx,mdx}", // This will include all files under 'src' and its subdirectories
+    'node_modules/flowbite-react/**/*.js', // Include Flowbite components
   ],
   theme: {
     extend: {
