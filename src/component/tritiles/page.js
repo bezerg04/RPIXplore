@@ -38,7 +38,7 @@ const cardContents = [
         {cardContents.map((content, index) => (
           <Card
             key={index}
-            className="max-w-xs bg-black"
+            className="max-w-xs"
             renderImage={() => (
               <div className="w-full h-full" style={{ height: '100%', overflow: 'hidden' }}>
                 <Image
