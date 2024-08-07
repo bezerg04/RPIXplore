@@ -1,16 +1,16 @@
 'use client'
 import React from "react";
-import { Checkbox, Dropdown, Button } from 'flowbite-react';
+import { Checkbox, Dropdown, Button, Badge } from 'flowbite-react';
 
 const DormFilters = ({ filters, setFilters }) => {
   const handleCheckboxChange = (type, value) => {
     setFilters(prev => {
-      const isAlreadySelected = prev[type]?.includes(value);  // Safeguard here
+      const isAlreadySelected = prev[type]?.includes(value);
       return {
         ...prev,
         [type]: isAlreadySelected 
           ? prev[type].filter(item => item !== value) 
-          : [...(prev[type] || []), value],  // Safeguard here
+          : [...(prev[type] || []), value],
       };
     });
   };
@@ -25,13 +25,20 @@ const DormFilters = ({ filters, setFilters }) => {
     });
   };
 
+  const removeFilter = (type, value) => {
+    setFilters(prev => ({
+      ...prev,
+      [type]: prev[type].filter(item => item !== value),
+    }));
+  };
+
   const createClickableRow = (id, label, type, value) => (
-    <Dropdown.Item onClick={() => handleCheckboxChange(type, value)}>
+    <Dropdown.Item key={id} onClick={() => handleCheckboxChange(type, value)}>
       <div className="flex items-center cursor-pointer">
         <Checkbox 
           id={id} 
           onChange={() => handleCheckboxChange(type, value)}
-          checked={filters[type]?.includes(value)}  // Safeguard here
+          checked={filters[type]?.includes(value)}
           className="mr-2"
         />
         <label htmlFor={id} className="cursor-pointer">
@@ -41,26 +48,53 @@ const DormFilters = ({ filters, setFilters }) => {
     </Dropdown.Item>
   );
 
-  const selectedFiltersText = () => {
+  const renderSelectedFilters = () => {
     const selected = [];
 
     if (filters.roomType?.length > 0) {
-      selected.push(`Room Types: ${filters.roomType.join(', ')}`);
+      filters.roomType.forEach((type) =>
+        selected.push({ label: `Room Type: ${type}`, type: 'roomType', value: type })
+      );
     }
     if (filters.year?.length > 0) {
-      selected.push(`Years: ${filters.year.join(', ')}`);
+      filters.year.forEach((year) =>
+        selected.push({ label: `Year: ${year}`, type: 'year', value: year })
+      );
     }
     if (filters.accessible?.length > 0) {
-      selected.push(`Accessibility: ${filters.accessible.includes(true) ? 'Accessible' : 'Non-Accessible'}`);
+      filters.accessible.forEach((accessible) =>
+        selected.push({
+          label: `Accessibility: ${accessible ? 'Accessible' : 'Non-Accessible'}`,
+          type: 'accessible',
+          value: accessible,
+        })
+      );
     }
     if (filters.ac?.length > 0) {
-      selected.push(`AC: ${filters.ac.includes(true) ? 'Has AC' : 'No AC'}`);
+      filters.ac.forEach((ac) =>
+        selected.push({
+          label: `AC: ${ac ? 'Has AC' : 'No AC'}`,
+          type: 'ac',
+          value: ac,
+        })
+      );
     }
     if (filters.location?.length > 0) {
-      selected.push(`Location: ${filters.location.join(', ')}`);
+      filters.location.forEach((location) =>
+        selected.push({ label: `Location: ${location}`, type: 'location', value: location })
+      );
     }
 
-    return selected.join(' | ');
+    return selected.map((filter, index) => (
+      <Badge
+        key={index}
+        color="indigo"
+        onClick={() => removeFilter(filter.type, filter.value)}
+        className="cursor-pointer mr-2 mb-2"
+      >
+        {filter.label} &times;
+      </Badge>
+    ));
   };
 
   return (
@@ -96,8 +130,8 @@ const DormFilters = ({ filters, setFilters }) => {
         <Button onClick={resetFilters} color="gray">Reset</Button>
       </div>
 
-      <div className="ml-5 mt-0 text-gray-700">
-        {selectedFiltersText() || "No filters applied"}
+      <div className="ml-5 mt-1 text-gray-700 flex flex-wrap">
+        {renderSelectedFilters().length ? renderSelectedFilters() : "No filters applied"}
       </div>
     </div>
   );
