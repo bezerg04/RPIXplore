@@ -5,12 +5,12 @@ import { Checkbox, Dropdown, Button } from 'flowbite-react';
 const DormFilters = ({ filters, setFilters }) => {
   const handleCheckboxChange = (type, value) => {
     setFilters(prev => {
-      const isAlreadySelected = prev[type].includes(value);
+      const isAlreadySelected = prev[type]?.includes(value);  // Safeguard here
       return {
         ...prev,
         [type]: isAlreadySelected 
           ? prev[type].filter(item => item !== value) 
-          : [...prev[type], value],
+          : [...(prev[type] || []), value],  // Safeguard here
       };
     });
   };
@@ -20,7 +20,8 @@ const DormFilters = ({ filters, setFilters }) => {
       roomType: [],
       year: [],
       accessible: [],
-      ac: []
+      ac: [],
+      location: []  // Reset location filter as well
     });
   };
 
@@ -30,7 +31,7 @@ const DormFilters = ({ filters, setFilters }) => {
         <Checkbox 
           id={id} 
           onChange={() => handleCheckboxChange(type, value)}
-          checked={filters[type].includes(value)}
+          checked={filters[type]?.includes(value)}  // Safeguard here
           className="mr-2"
         />
         <label htmlFor={id} className="cursor-pointer">
@@ -43,17 +44,20 @@ const DormFilters = ({ filters, setFilters }) => {
   const selectedFiltersText = () => {
     const selected = [];
 
-    if (filters.roomType.length > 0) {
+    if (filters.roomType?.length > 0) {
       selected.push(`Room Types: ${filters.roomType.join(', ')}`);
     }
-    if (filters.year.length > 0) {
+    if (filters.year?.length > 0) {
       selected.push(`Years: ${filters.year.join(', ')}`);
     }
-    if (filters.accessible.length > 0) {
+    if (filters.accessible?.length > 0) {
       selected.push(`Accessibility: ${filters.accessible.includes(true) ? 'Accessible' : 'Non-Accessible'}`);
     }
-    if (filters.ac.length > 0) {
+    if (filters.ac?.length > 0) {
       selected.push(`AC: ${filters.ac.includes(true) ? 'Has AC' : 'No AC'}`);
+    }
+    if (filters.location?.length > 0) {
+      selected.push(`Location: ${filters.location.join(', ')}`);
     }
 
     return selected.join(' | ');
@@ -81,6 +85,12 @@ const DormFilters = ({ filters, setFilters }) => {
         <Dropdown label="Air Conditioning">
           {createClickableRow("ac", "Has AC", "ac", true)}
           {createClickableRow("noAc", "No AC", "ac", false)}
+        </Dropdown>
+
+        <Dropdown label="Location">
+          {createClickableRow("inCampus", "In-Campus", "location", "In-Campus")}
+          {createClickableRow("freshmanHill", "Freshman Hill", "location", "Freshman Hill")}
+          {/* Add more locations as needed */}
         </Dropdown>
 
         <Button onClick={resetFilters} color="gray">Reset</Button>
