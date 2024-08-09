@@ -51,7 +51,7 @@
                         "title" : "Single",
                         "sqft" : "Varying, check floor plan",
                         "img" : [],
-                        "scan" : []
+                        "scan" : ["../scans/RoeblingS002.glb"]
                     },
                     "Double" : {
                         "title" : "Double",
@@ -63,7 +63,7 @@
                         "title" : "Triple",
                         "sqft" : "Varying, check floor plan",
                         "img" : [],
-                        "scan" : []
+                        "scan" : ["../scans/RoeblingT001.glb", "../scans/RoeblingT003.glb", "../scans/RoeblingT005.glb"]
                     }
                 }
             },
@@ -139,7 +139,7 @@
     },
     "Barton Hall": {
         "name":"Barton Hall",
-        "description" : "Barton",
+        "description" : "Barton Hall at Rensselaer Polytechnic Institute (RPI) is a residence hall located on the Freshman Hill, exclusively offering triple rooms and triple suites. Each triple is designed to accommodate three students, providing essential furnishings like beds, desks, and storage spaces. The hall features shared bathrooms on each floor for the traditional triples, while the suites will have you sharing a bathroom with your two roomates and your three suitemates next door. Its location is convenient, with easy access to academic buildings, dining facilities, and the Union, making it a popular choice for first-year students seeking a dynamic and supportive living environment.",
         "address" : "1523 Sage Ave, Troy, NY 12180",
         "location" : "Freshman Hill",
         "img": "https://i.redd.it/campus-appreciation-post-to-try-and-spread-some-positivity-v0-997ot0it1oda1.jpg?width=4032&format=pjpg&auto=webp&s=aed418bee01797297237977d30b896aa20a123f8",
@@ -188,7 +188,7 @@
                         "sqft" : "Varying, check floor plan",
                         "img" : ["https://i.redd.it/campus-appreciation-post-to-try-and-spread-some-positivity-v0-997ot0it1oda1.jpg?width=4032&format=pjpg&auto=webp&s=aed418bee01797297237977d30b896aa20a123f8",
                     "https://i.redd.it/campus-appreciation-post-to-try-and-spread-some-positivity-v0-997ot0it1oda1.jpg?width=4032&format=pjpg&auto=webp&s=aed418bee01797297237977d30b896aa20a123f8"],
-                        "scan" : ["poly.glb"]
+                        "scan" : ["../scans/poly.glb", "../scans/poly.glb"]
                     },
                     "TripleSuite" : {
                         "title" : "Triple Suite",
@@ -216,6 +216,86 @@
                 "sink" : true,
                 "fridge" : false,
                 "stove" : false
+            }
+        }]
+
+    },
+
+
+
+    "Warren Hall": {
+        "name":"Warren Hall",
+        "description" : "Warren Hall NEEDS WORK",
+        "address" : "79 Griswold Rd, Troy, NY 12180",
+        "location" : "Freshman Hill",
+        "img": "https://i.imgur.com/DakbaOq.jpg",
+        "resources" : [],
+        "year" : ["Freshman"],
+        "accessible" : true,
+        "onebuilding" : true,
+        "laundryInfo" : {
+            "location" : "First Floor",
+            "nWashers" : 1,
+            "nDryers" : 1
+        },
+        "pricing" : {
+            "single" : "$10,930",
+            "double" : "$9,650"
+        },
+        "ac" : false,
+        "printer" : "First Floor Lounge",
+        "dining" : "Commons Dining Hall",
+        "blinds" : true,
+        "pests" : ["Roaches", "Mice"],
+        "wifi" : true,
+        "ethernet" : true,
+        "parkinglot" : true,
+        "stacks": [{
+            "title" : "Warren Hall",
+            "description" : "Warren Hall",
+            "gender" : "mixed, floor based",
+            "furniture" : {
+                "wardrobe" : "36in x 25in x 72in",
+                "dresser" : "in x in x in, 3 drawer",
+                "desk" : "48in x 24in x",
+                "deskBookcase" : "34in x 9in x 26in",
+                "deskDrawer" : true,
+                "chair" : true,
+                "mattress" : "Extra Long Twin (36in x 80in x 6in)",
+                "bedHeight" : "Adjustable (max )"
+            },
+            "amenities" : ["Lounge Area", "Piano", "Pool Table"],
+            "roomInfo" : {
+                "types": {
+                    "Single" : {
+                        "title" : "Single",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : ["https://i.imgur.com/SiBSBOE.jpg",
+                        "https://i.imgur.com/SiBSBOE.jpg"
+                        ],
+                        "scan" : []
+                    },
+                    "Double" : {
+                        "title" : "Double",
+                        "sqft" : "Varying, check floor plan 2",
+                        "img" : [],
+                        "scan" : []
+                    }
+                }
+            },
+            "nFloors" : 4,
+            "bathroomInfo" : {
+                "Hall Bathroom" : {
+                    "toilets" : 1,
+                    "sinks" : 2,
+                    "showers" : 1
+                }
+            },
+            "kitchenInfo" : {
+                "microwave" : true,
+                "sink" : true,
+                "fridge" : true,
+                "stove" : true
             }
         }]
 

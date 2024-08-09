@@ -21,7 +21,7 @@ export default function Sector({ sectionName = 'Quad' }) {
   return (
     <div>
       {/* Container for buttons with full width, centered content, and padding */}
-      <div className=' w-10/12 flex justify-center items-center p-4'>
+      <div className=' flex justify-center items-center p-4'>
         {stacks && stacks.length > 1 && (
           <div className='flex gap-1 flex-wrap justify-center'>
             {stacks.map((stack, index) => (
@@ -53,10 +53,20 @@ export default function Sector({ sectionName = 'Quad' }) {
         </div>
         
         {resources && resources.length > 0 ? (
-          <div className=" p-2 mb-1.5 pb-2.5 h-full">
-            <Carousel>
+          <div className="w-1/2 p-2 mb-1.5 pb-2.5 h-full">
+            <Carousel slide={false} className="h-full">
               {resources.map((resource, index) => (
-                <img key={index} src={resource} alt={`Resource ${index + 1}`} className='h-full object-fit' />
+                <div 
+                  key={index}
+                  className="relative h-0"
+                  style={{ paddingBottom: '56.25%' }} // 16:9 aspect ratio
+                >
+                  <img
+                    src={resource}
+                    alt={`Resource ${index + 1}`}
+                    className="absolute top-0 left-0 w-full h-full object-cover"
+                  />
+                </div>
               ))}
             </Carousel>
           </div>
@@ -65,6 +75,7 @@ export default function Sector({ sectionName = 'Quad' }) {
             <img src={img} alt="Default" />
           </div>
         )}
+        
       </div>
     </div>
   );
