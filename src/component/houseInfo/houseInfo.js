@@ -109,7 +109,7 @@ const House = ({ dormData }) => {
                           className="model-viewer w-full h-full"
                           ar
                           camera-controls
-                          style={{ width: '100%', height: '390px' }} // Adjust the height as necessary
+                          style={{ width: '100%', height: '430px' }} // Adjust the height as necessary
                         ></model-viewer>
                       </div>
                     ))}
@@ -127,7 +127,7 @@ const House = ({ dormData }) => {
 
   return (
     <div className="flex justify-center">
-      <div style={{ width: '90%' }} className="border-solid border-2 rounded-lg mb-36">
+      <div style={{ width: '90%' }} className="border-solid border-2 rounded-lg mb-8">
         <div className="relative">
           <Tabs variant="underline">{roomTabs}</Tabs>
           <h2 className="absolute right-4 top-2.5 text-lg font-semibold">{dormData.title}</h2>

@@ -50,7 +50,7 @@
                     "Single" : {
                         "title" : "Single",
                         "sqft" : "Varying, check floor plan",
-                        "img" : [],
+                        "img" : ["https://upload.wikimedia.org/wikipedia/commons/9/97/RPIQuad.jpg"],
                         "scan" : ["../scans/RoeblingS002.glb"]
                     },
                     "Double" : {
@@ -228,7 +228,7 @@
         "description" : "Warren Hall NEEDS WORK",
         "address" : "79 Griswold Rd, Troy, NY 12180",
         "location" : "Freshman Hill",
-        "img": "https://i.imgur.com/DakbaOq.jpg",
+        "img": "https://i.imgur.com/0r9Ezu5.jpeg",
         "resources" : [],
         "year" : ["Freshman"],
         "accessible" : true,
@@ -305,9 +305,9 @@
         "description" : "North",
         "address" : "1102 Sage Ave, Troy, NY 12180",
         "location" : "In-Campus",
-        "img": "https://i.imgur.com/SiBSBOE.jpg",
+        "img": "https://i.imgur.com/5avXcBU.jpeg",
         "resources" : [],
-        "year" : ["Sophomore"],
+        "year" : ["Freshman"],
         "accessible" : false,
         "onebuilding" : true,
         "laundryInfo" : {
@@ -378,5 +378,849 @@
             }
         }]
 
+    },
+
+
+
+
+
+
+    "Sharp Hall": {
+        "name":"Sharp Hall",
+        "description" : "North",
+        "address" : "1518 Bouton Rd, Troy, NY 12180",
+        "location" : "Freshman Hill",
+        "img": "https://i.imgur.com/QcYADaz.jpeg",
+        "resources" : [],
+        "year" : ["Freshman"],
+        "accessible" : false,
+        "onebuilding" : true,
+        "laundryInfo" : {
+            "location" : "First Floor",
+            "nWashers" : 3,
+            "nDryers" : 6
+        },
+        "pricing" : {
+            "single" : "$9,790",
+            "double" : "$9,790"
+        },
+        "ac" : true,
+        "printer" : "First Floor Lounge",
+        "dining" : "Russel Sage Dining Hall",
+        "blinds" : true,
+        "pests" : ["Roaches", "Mice"],
+        "wifi" : true,
+        "ethernet" : true,
+        "parkinglot" : true,
+        "stacks": [{
+            "title" : "North Hall",
+            "description" : "North Hall",
+            "gender" : "mixed, floor based",
+            "furniture" : {
+                "wardrobe" : "36in x 25in x 72in",
+                "dresser" : "in x in x in, 3 drawer",
+                "desk" : "48in x 24in x",
+                "deskBookcase" : "34in x 9in x 26in",
+                "deskDrawer" : true,
+                "chair" : true,
+                "mattress" : "Extra Long Twin (36in x 80in x 6in)",
+                "bedHeight" : "Adjustable (max )"
+            },
+            "amenities" : ["Lounge Area", "Piano"],
+            "roomInfo" : {
+                "types": {
+                    "Single" : {
+                        "title" : "Single",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : ["https://i.imgur.com/SiBSBOE.jpg",
+                        "https://i.imgur.com/SiBSBOE.jpg"
+                        
+                                
+                                ],
+                        "scan" : []
+                    }
+                }
+            },
+            "nFloors" : 4,
+            "bathroomInfo" : {
+                "Hall Bathroom" : {
+                    "toilets" : 1,
+                    "sinks" : 2,
+                    "showers" : 1
+                }
+            },
+            "kitchenInfo" : {
+                "microwave" : true,
+                "sink" : true,
+                "fridge" : true,
+                "stove" : true
+            }
+        }]
+
+    },
+
+
+
+
+
+
+    "Nason Hall": {
+        "name":"Nason Hall",
+        "description" : "North",
+        "address" : "1965 Burdett Ave, Troy, NY 12180",
+        "location" : "Freshman Hill",
+        "img": "https://i.imgur.com/gcOrtxA.jpeg",
+        "resources" : [],
+        "year" : ["Freshman"],
+        "accessible" : false,
+        "onebuilding" : true,
+        "laundryInfo" : {
+            "location" : "First Floor",
+            "nWashers" : 3,
+            "nDryers" : 6
+        },
+        "pricing" : {
+            "single" : "$9,790",
+            "double" : "$9,790"
+        },
+        "ac" : true,
+        "printer" : "First Floor Lounge",
+        "dining" : "Russel Sage Dining Hall",
+        "blinds" : true,
+        "pests" : ["Roaches", "Mice"],
+        "wifi" : true,
+        "ethernet" : true,
+        "parkinglot" : true,
+        "stacks": [{
+            "title" : "North Hall",
+            "description" : "North Hall",
+            "gender" : "mixed, floor based",
+            "furniture" : {
+                "wardrobe" : "36in x 25in x 72in",
+                "dresser" : "in x in x in, 3 drawer",
+                "desk" : "48in x 24in x",
+                "deskBookcase" : "34in x 9in x 26in",
+                "deskDrawer" : true,
+                "chair" : true,
+                "mattress" : "Extra Long Twin (36in x 80in x 6in)",
+                "bedHeight" : "Adjustable (max )"
+            },
+            "amenities" : ["Lounge Area", "Piano"],
+            "roomInfo" : {
+                "types": {
+                    "Single" : {
+                        "title" : "Single",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : ["https://i.imgur.com/SiBSBOE.jpg",
+                        "https://i.imgur.com/SiBSBOE.jpg"
+                        
+                                
+                                ],
+                        "scan" : []
+                    },
+                    "Double" : {
+                        "title" : "Single",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : ["https://i.imgur.com/SiBSBOE.jpg",
+                        "https://i.imgur.com/SiBSBOE.jpg"
+                        
+                                
+                                ],
+                        "scan" : []
+                    },
+                    "Triple" : {
+                        "title" : "Single",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : ["https://i.imgur.com/SiBSBOE.jpg",
+                        "https://i.imgur.com/SiBSBOE.jpg"
+                        
+                                
+                                ],
+                        "scan" : []
+                    }
+                }
+            },
+            "nFloors" : 4,
+            "bathroomInfo" : {
+                "Hall Bathroom" : {
+                    "toilets" : 1,
+                    "sinks" : 2,
+                    "showers" : 1
+                }
+            },
+            "kitchenInfo" : {
+                "microwave" : true,
+                "sink" : true,
+                "fridge" : true,
+                "stove" : true
+            }
+        }]
+
+    },
+
+
+
+
+
+
+    "Nugent Hall": {
+        "name":"Nugent Hall",
+        "description" : "North",
+        "address" : "1520 Bouton Rd, Troy, NY 12180",
+        "location" : "Freshman Hill",
+        "img": "https://i.imgur.com/Std1wkI.jpeg",
+        "resources" : [],
+        "year" : ["Freshman"],
+        "accessible" : false,
+        "onebuilding" : true,
+        "laundryInfo" : {
+            "location" : "First Floor",
+            "nWashers" : 3,
+            "nDryers" : 6
+        },
+        "pricing" : {
+            "single" : "$9,790",
+            "double" : "$9,790"
+        },
+        "ac" : true,
+        "printer" : "First Floor Lounge",
+        "dining" : "Russel Sage Dining Hall",
+        "blinds" : true,
+        "pests" : ["Roaches", "Mice"],
+        "wifi" : true,
+        "ethernet" : true,
+        "parkinglot" : true,
+        "stacks": [{
+            "title" : "North Hall",
+            "description" : "North Hall",
+            "gender" : "mixed, floor based",
+            "furniture" : {
+                "wardrobe" : "36in x 25in x 72in",
+                "dresser" : "in x in x in, 3 drawer",
+                "desk" : "48in x 24in x",
+                "deskBookcase" : "34in x 9in x 26in",
+                "deskDrawer" : true,
+                "chair" : true,
+                "mattress" : "Extra Long Twin (36in x 80in x 6in)",
+                "bedHeight" : "Adjustable (max )"
+            },
+            "amenities" : ["Lounge Area", "Piano"],
+            "roomInfo" : {
+                "types": {
+                    "Single" : {
+                        "title" : "Single",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : ["https://i.imgur.com/SiBSBOE.jpg",
+                        "https://i.imgur.com/SiBSBOE.jpg"
+                        
+                                
+                                ],
+                        "scan" : []
+                    },
+                    "Double" : {
+                        "title" : "Single",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : ["https://i.imgur.com/SiBSBOE.jpg",
+                        "https://i.imgur.com/SiBSBOE.jpg"
+                        
+                                
+                                ],
+                        "scan" : []
+                    }
+                }
+            },
+            "nFloors" : 4,
+            "bathroomInfo" : {
+                "Hall Bathroom" : {
+                    "toilets" : 1,
+                    "sinks" : 2,
+                    "showers" : 1
+                }
+            },
+            "kitchenInfo" : {
+                "microwave" : true,
+                "sink" : true,
+                "fridge" : true,
+                "stove" : true
+            }
+        }]
+
+    },
+
+
+
+
+
+
+    "Hall Hall": {
+        "name":"Hall Hall",
+        "description" : "North",
+        "address" : "75 Griswold Rd, Troy, NY 12180",
+        "location" : "Freshman Hill",
+        "img": "https://i.imgur.com/zOUVzb9.jpeg",
+        "resources" : [],
+        "year" : ["Freshman"],
+        "accessible" : false,
+        "onebuilding" : true,
+        "laundryInfo" : {
+            "location" : "First Floor",
+            "nWashers" : 3,
+            "nDryers" : 6
+        },
+        "pricing" : {
+            "single" : "$9,790",
+            "double" : "$9,790"
+        },
+        "ac" : true,
+        "printer" : "First Floor Lounge",
+        "dining" : "Russel Sage Dining Hall",
+        "blinds" : true,
+        "pests" : ["Roaches", "Mice"],
+        "wifi" : true,
+        "ethernet" : true,
+        "parkinglot" : true,
+        "stacks": [{
+            "title" : "North Hall",
+            "description" : "North Hall",
+            "gender" : "mixed, floor based",
+            "furniture" : {
+                "wardrobe" : "36in x 25in x 72in",
+                "dresser" : "in x in x in, 3 drawer",
+                "desk" : "48in x 24in x",
+                "deskBookcase" : "34in x 9in x 26in",
+                "deskDrawer" : true,
+                "chair" : true,
+                "mattress" : "Extra Long Twin (36in x 80in x 6in)",
+                "bedHeight" : "Adjustable (max )"
+            },
+            "amenities" : ["Lounge Area", "Piano"],
+            "roomInfo" : {
+                "types": {
+                    "Single" : {
+                        "title" : "Single",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : ["https://i.imgur.com/SiBSBOE.jpg",
+                        "https://i.imgur.com/SiBSBOE.jpg"
+                        
+                                
+                                ],
+                        "scan" : []
+                    },
+                    "Double" : {
+                        "title" : "Single",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : ["https://i.imgur.com/SiBSBOE.jpg",
+                        "https://i.imgur.com/SiBSBOE.jpg"
+                        
+                                
+                                ],
+                        "scan" : []
+                    },
+                    "Triple" : {
+                        "title" : "Single",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : ["https://i.imgur.com/SiBSBOE.jpg",
+                        "https://i.imgur.com/SiBSBOE.jpg"
+                        
+                                
+                                ],
+                        "scan" : []
+                    }
+                }
+            },
+            "nFloors" : 4,
+            "bathroomInfo" : {
+                "Hall Bathroom" : {
+                    "toilets" : 1,
+                    "sinks" : 2,
+                    "showers" : 1
+                }
+            },
+            "kitchenInfo" : {
+                "microwave" : true,
+                "sink" : true,
+                "fridge" : true,
+                "stove" : true
+            }
+        }]
+
+    },
+
+
+
+
+
+
+    "E-Complex": {
+        "name":"E-Complex",
+        "description" : "North",
+        "address" : "1106 Sage Ave, Troy, NY 12180",
+        "location" : "In-Campus",
+        "img": "https://i.imgur.com/aC4BFFG.jpeg",
+        "resources" : [],
+        "year" : ["Sophomore"],
+        "accessible" : false,
+        "onebuilding" : true,
+        "laundryInfo" : {
+            "location" : "First Floor",
+            "nWashers" : 3,
+            "nDryers" : 6
+        },
+        "pricing" : {
+            "single" : "$9,790",
+            "double" : "$9,790"
+        },
+        "ac" : true,
+        "printer" : "First Floor Lounge",
+        "dining" : "Russel Sage Dining Hall",
+        "blinds" : true,
+        "pests" : ["Roaches", "Mice"],
+        "wifi" : true,
+        "ethernet" : true,
+        "parkinglot" : true,
+        "stacks": [{
+            "title" : "North Hall",
+            "description" : "North Hall",
+            "gender" : "mixed, floor based",
+            "furniture" : {
+                "wardrobe" : "36in x 25in x 72in",
+                "dresser" : "in x in x in, 3 drawer",
+                "desk" : "48in x 24in x",
+                "deskBookcase" : "34in x 9in x 26in",
+                "deskDrawer" : true,
+                "chair" : true,
+                "mattress" : "Extra Long Twin (36in x 80in x 6in)",
+                "bedHeight" : "Adjustable (max )"
+            },
+            "amenities" : ["Lounge Area", "Piano"],
+            "roomInfo" : {
+                "types": {
+                    "Single" : {
+                        "title" : "Single",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : ["https://i.imgur.com/SiBSBOE.jpg",
+                        "https://i.imgur.com/SiBSBOE.jpg"
+                        
+                                
+                                ],
+                        "scan" : []
+                    },
+                    "Double" : {
+                        "title" : "Single",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : ["https://i.imgur.com/SiBSBOE.jpg",
+                        "https://i.imgur.com/SiBSBOE.jpg"
+                        
+                                
+                                ],
+                        "scan" : []
+                    }
+                }
+            },
+            "nFloors" : 4,
+            "bathroomInfo" : {
+                "Hall Bathroom" : {
+                    "toilets" : 1,
+                    "sinks" : 2,
+                    "showers" : 1
+                }
+            },
+            "kitchenInfo" : {
+                "microwave" : true,
+                "sink" : true,
+                "fridge" : true,
+                "stove" : true
+            }
+        }]
+
+    },
+
+
+
+
+
+
+    "Davison Hall": {
+        "name":"Davison Hall",
+        "description" : "North",
+        "address" : "1520 Bouton Rd, Troy, NY 12180",
+        "location" : "Freshman Hill",
+        "img": "https://i.imgur.com/qJl5eu1.jpeg",
+        "resources" : [],
+        "year" : ["Freshman"],
+        "accessible" : false,
+        "onebuilding" : true,
+        "laundryInfo" : {
+            "location" : "First Floor",
+            "nWashers" : 3,
+            "nDryers" : 6
+        },
+        "pricing" : {
+            "single" : "$9,790",
+            "double" : "$9,790"
+        },
+        "ac" : true,
+        "printer" : "First Floor Lounge",
+        "dining" : "Russel Sage Dining Hall",
+        "blinds" : true,
+        "pests" : ["Roaches", "Mice"],
+        "wifi" : true,
+        "ethernet" : true,
+        "parkinglot" : true,
+        "stacks": [{
+            "title" : "North Hall",
+            "description" : "North Hall",
+            "gender" : "mixed, floor based",
+            "furniture" : {
+                "wardrobe" : "36in x 25in x 72in",
+                "dresser" : "in x in x in, 3 drawer",
+                "desk" : "48in x 24in x",
+                "deskBookcase" : "34in x 9in x 26in",
+                "deskDrawer" : true,
+                "chair" : true,
+                "mattress" : "Extra Long Twin (36in x 80in x 6in)",
+                "bedHeight" : "Adjustable (max )"
+            },
+            "amenities" : ["Lounge Area", "Piano"],
+            "roomInfo" : {
+                "types": {
+                    "Single" : {
+                        "title" : "Single",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : ["https://i.imgur.com/SiBSBOE.jpg",
+                        "https://i.imgur.com/SiBSBOE.jpg"
+                        
+                                
+                                ],
+                        "scan" : []
+                    },
+                    "Double" : {
+                        "title" : "Single",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : ["https://i.imgur.com/SiBSBOE.jpg",
+                        "https://i.imgur.com/SiBSBOE.jpg"
+                        
+                                
+                                ],
+                        "scan" : []
+                    }
+                }
+            },
+            "nFloors" : 4,
+            "bathroomInfo" : {
+                "Hall Bathroom" : {
+                    "toilets" : 1,
+                    "sinks" : 2,
+                    "showers" : 1
+                }
+            },
+            "kitchenInfo" : {
+                "microwave" : true,
+                "sink" : true,
+                "fridge" : true,
+                "stove" : true
+            }
+        }]
+
+    },
+
+
+
+
+
+
+    "Crockett Hall": {
+        "name":"Crockett Hall",
+        "description" : "North",
+        "address" : "Crockett Hall, 2053-2077 Burdett Ave, Troy, NY 12180",
+        "location" : "Freshman Hill",
+        "img": "https://i.imgur.com/zF8imYy.jpeg",
+        "resources" : [],
+        "year" : ["Freshman"],
+        "accessible" : false,
+        "onebuilding" : true,
+        "laundryInfo" : {
+            "location" : "First Floor",
+            "nWashers" : 3,
+            "nDryers" : 6
+        },
+        "pricing" : {
+            "single" : "$9,790",
+            "double" : "$9,790"
+        },
+        "ac" : true,
+        "printer" : "First Floor Lounge",
+        "dining" : "Russel Sage Dining Hall",
+        "blinds" : true,
+        "pests" : ["Roaches", "Mice"],
+        "wifi" : true,
+        "ethernet" : true,
+        "parkinglot" : true,
+        "stacks": [{
+            "title" : "North Hall",
+            "description" : "North Hall",
+            "gender" : "mixed, floor based",
+            "furniture" : {
+                "wardrobe" : "36in x 25in x 72in",
+                "dresser" : "in x in x in, 3 drawer",
+                "desk" : "48in x 24in x",
+                "deskBookcase" : "34in x 9in x 26in",
+                "deskDrawer" : true,
+                "chair" : true,
+                "mattress" : "Extra Long Twin (36in x 80in x 6in)",
+                "bedHeight" : "Adjustable (max )"
+            },
+            "amenities" : ["Lounge Area", "Piano"],
+            "roomInfo" : {
+                "types": {
+                    "Single" : {
+                        "title" : "Single",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : ["https://i.imgur.com/SiBSBOE.jpg",
+                        "https://i.imgur.com/SiBSBOE.jpg"
+                        
+                                
+                                ],
+                        "scan" : []
+                    },
+                    "Double" : {
+                        "title" : "Single",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : ["https://i.imgur.com/SiBSBOE.jpg",
+                        "https://i.imgur.com/SiBSBOE.jpg"
+                        
+                                
+                                ],
+                        "scan" : []
+                    },
+                    "Triple" : {
+                        "title" : "Single",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : ["https://i.imgur.com/SiBSBOE.jpg",
+                        "https://i.imgur.com/SiBSBOE.jpg"
+                        
+                                
+                                ],
+                        "scan" : []
+                    }
+                }
+            },
+            "nFloors" : 4,
+            "bathroomInfo" : {
+                "Hall Bathroom" : {
+                    "toilets" : 1,
+                    "sinks" : 2,
+                    "showers" : 1
+                }
+            },
+            "kitchenInfo" : {
+                "microwave" : true,
+                "sink" : true,
+                "fridge" : true,
+                "stove" : true
+            }
+        }]
+
+    },
+
+
+
+
+
+
+    "Cary Hall": {
+        "name":"Cary Hall",
+        "description" : "North",
+        "address" : "1999 Burdett Ave, Troy, NY 12180",
+        "location" : "Freshman Hill",
+        "img": "https://i.imgur.com/hXoNdbj.jpeg",
+        "resources" : [],
+        "year" : ["Freshman"],
+        "accessible" : false,
+        "onebuilding" : true,
+        "laundryInfo" : {
+            "location" : "First Floor",
+            "nWashers" : 3,
+            "nDryers" : 6
+        },
+        "pricing" : {
+            "single" : "$9,790",
+            "double" : "$9,790"
+        },
+        "ac" : true,
+        "printer" : "First Floor Lounge",
+        "dining" : "Russel Sage Dining Hall",
+        "blinds" : true,
+        "pests" : ["Roaches", "Mice"],
+        "wifi" : true,
+        "ethernet" : true,
+        "parkinglot" : true,
+        "stacks": [{
+            "title" : "North Hall",
+            "description" : "North Hall",
+            "gender" : "mixed, floor based",
+            "furniture" : {
+                "wardrobe" : "36in x 25in x 72in",
+                "dresser" : "in x in x in, 3 drawer",
+                "desk" : "48in x 24in x",
+                "deskBookcase" : "34in x 9in x 26in",
+                "deskDrawer" : true,
+                "chair" : true,
+                "mattress" : "Extra Long Twin (36in x 80in x 6in)",
+                "bedHeight" : "Adjustable (max )"
+            },
+            "amenities" : ["Lounge Area", "Piano"],
+            "roomInfo" : {
+                "types": {
+                    "Single" : {
+                        "title" : "Single",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : ["https://i.imgur.com/SiBSBOE.jpg",
+                        "https://i.imgur.com/SiBSBOE.jpg"
+                        
+                                
+                                ],
+                        "scan" : []
+                    },
+                    "Double" : {
+                        "title" : "Single",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : ["https://i.imgur.com/SiBSBOE.jpg",
+                        "https://i.imgur.com/SiBSBOE.jpg"
+                        
+                                
+                                ],
+                        "scan" : []
+                    },
+                    "Triple" : {
+                        "title" : "Single",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : ["https://i.imgur.com/SiBSBOE.jpg",
+                        "https://i.imgur.com/SiBSBOE.jpg"
+                        
+                                
+                                ],
+                        "scan" : []
+                    }
+                }
+            },
+            "nFloors" : 4,
+            "bathroomInfo" : {
+                "Hall Bathroom" : {
+                    "toilets" : 1,
+                    "sinks" : 2,
+                    "showers" : 1
+                }
+            },
+            "kitchenInfo" : {
+                "microwave" : true,
+                "sink" : true,
+                "fridge" : true,
+                "stove" : true
+            }
+        }]
+
+    },
+
+
+
+
+
+
+    "Bray Hall": {
+        "name":"Bray Hall",
+        "description" : "North",
+        "address" : "Bray Hall, Sage Ave, Troy, NY 12180",
+        "location" : "Freshman Hill",
+        "img": "https://i.imgur.com/sZulye5.jpeg",
+        "resources" : [],
+        "year" : ["Freshman"],
+        "accessible" : false,
+        "onebuilding" : true,
+        "laundryInfo" : {
+            "location" : "First Floor",
+            "nWashers" : 3,
+            "nDryers" : 6
+        },
+        "pricing" : {
+            "single" : "$9,790",
+            "double" : "$9,790"
+        },
+        "ac" : true,
+        "printer" : "First Floor Lounge",
+        "dining" : "Russel Sage Dining Hall",
+        "blinds" : true,
+        "pests" : ["Roaches", "Mice"],
+        "wifi" : true,
+        "ethernet" : true,
+        "parkinglot" : true,
+        "stacks": [{
+            "title" : "North Hall",
+            "description" : "North Hall",
+            "gender" : "mixed, floor based",
+            "furniture" : {
+                "wardrobe" : "36in x 25in x 72in",
+                "dresser" : "in x in x in, 3 drawer",
+                "desk" : "48in x 24in x",
+                "deskBookcase" : "34in x 9in x 26in",
+                "deskDrawer" : true,
+                "chair" : true,
+                "mattress" : "Extra Long Twin (36in x 80in x 6in)",
+                "bedHeight" : "Adjustable (max )"
+            },
+            "amenities" : ["Lounge Area", "Piano"],
+            "roomInfo" : {
+                "types": {
+                    "Single" : {
+                        "title" : "Single",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : ["https://i.imgur.com/SiBSBOE.jpg",
+                        "https://i.imgur.com/SiBSBOE.jpg"
+                        
+                                
+                                ],
+                        "scan" : []
+                    },
+                    "Double" : {
+                        "title" : "Single",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : ["https://i.imgur.com/SiBSBOE.jpg",
+                        "https://i.imgur.com/SiBSBOE.jpg"
+                        
+                                
+                                ],
+                        "scan" : []
+                    },
+                    "Triple" : {
+                        "title" : "Single",
+                        "sqft" : "Varying, check floor plan",
+                        "img" : ["https://i.imgur.com/SiBSBOE.jpg",
+                        "https://i.imgur.com/SiBSBOE.jpg"
+                        
+                                
+                                ],
+                        "scan" : []
+                    }
+                }
+            },
+            "nFloors" : 4,
+            "bathroomInfo" : {
+                "Hall Bathroom" : {
+                    "toilets" : 1,
+                    "sinks" : 2,
+                    "showers" : 1
+                }
+            },
+            "kitchenInfo" : {
+                "microwave" : true,
+                "sink" : true,
+                "fridge" : true,
+                "stove" : true
+            }
+        }]
+
     }
+
 }
+
+
