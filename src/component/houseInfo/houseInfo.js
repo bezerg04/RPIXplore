@@ -52,6 +52,9 @@ const House = ({ dormData }) => {
     setCurrentImageIndex(0);
     setCurrentScans([]);
   };
+  const disableDrag = (e) => {
+    e.preventDefault();
+  };
 
   const roomTabs = Object.entries(dormData.roomInfo.types).map(
     ([roomType, roomData]) => {
@@ -97,7 +100,13 @@ const House = ({ dormData }) => {
               <h5 className="text-lg font-bold">{dormData.title} {roomType} Scans</h5>
               <div className="w-full mt-2">
                 {roomData.scan.length > 0 ? (
-                  <Carousel slide={false} leftControl="<left" rightControl="right>" className="h-full">
+                  <Carousel
+                  onMouseDown={disableDrag} 
+                  onTouchStart={disableDrag} 
+                  onTouchMove={disableDrag} 
+                  onMouseMove= {disableDrag} 
+
+                  slide={false} leftControl="<left" rightControl="right>" className="h-full">
                     {roomData.scan.map((scan, index) => (
                       <div 
                         key={index}
