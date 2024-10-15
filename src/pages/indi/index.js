@@ -25,12 +25,12 @@ const DormPage = () => {
   }, []);
 
   return (
-    <div>
+    <div > 
       <NavBar activeLink="Dorms" />
       {dormData && dormData.img ? <Jumbotron imageSrc={dormData.img} /> : <p>Dorm information not available.</p>}
       {dormData && <Sector sectionName={dormData.name}></Sector>}
       {dormData && dormData.stacks && dormData.stacks.length > 0 ? (
-        <div>
+        <div >
           {dormData.stacks.map((stack, index) => (
             <div key={index} id={`stack-${index}`}>
               <House dormData={stack}></House>

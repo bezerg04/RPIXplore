@@ -32,50 +32,51 @@ export default function Sector({ sectionName = 'Quad' }) {
           </div>
         )}
       </div>
+      <div className="flex justify-center">
+        <div style={{ width: '96%' }}className='flex flex-row'>
+          <div className="flex flex-col w-1/2 pl-2 mt-0 Inter">
+            <h1 className='font-bold text-xl '>{sectionName}</h1>
 
-      <div className='flex flex-row mx-5'>
-        <div className="flex flex-col w-1/2 pl-2 mt-0 Inter">
-          <h1 className='font-bold text-xl '>{sectionName}</h1>
-
-          <p><strong>Description:</strong> {description}</p>
-          <p><strong>Address:</strong> {address}</p>
-          <p><strong>Location:</strong> {location}</p>
-          <p><strong>Accessible:</strong> {accessible ? 'Yes' : 'No'}</p>
-          <p><strong>AC Available:</strong> {ac ? 'Yes' : 'No'}</p>
-          <p><strong>Nearest Dining Hall:</strong> {dining}</p>
-          <p><strong>Laundry Info:</strong> Located at {laundryInfo.location} with {laundryInfo.nWashers} washers and {laundryInfo.nDryers} dryers.</p>
-          <p><strong>Pricing:</strong></p>
-          <ul>
-            <li>&emsp; Single: {pricing.single}</li>
-            <li>&emsp; Double: {pricing.double}</li>
-            <li>&emsp; Triple: {pricing.triple}</li>
-          </ul>
+            <p><strong>Description:</strong> {description}</p>
+            <p><strong>Address:</strong> {address}</p>
+            <p><strong>Location:</strong> {location}</p>
+            <p><strong>Accessible:</strong> {accessible ? 'Yes' : 'No'}</p>
+            <p><strong>AC Available:</strong> {ac ? 'Yes' : 'No'}</p>
+            <p><strong>Nearest Dining Hall:</strong> {dining}</p>
+            <p><strong>Laundry Info:</strong> Located at {laundryInfo.location} with {laundryInfo.nWashers} washers and {laundryInfo.nDryers} dryers.</p>
+            <p><strong>Pricing:</strong></p>
+            <ul>
+              <li>&emsp; Single: {pricing.single}</li>
+              <li>&emsp; Double: {pricing.double}</li>
+              <li>&emsp; Triple: {pricing.triple}</li>
+            </ul>
+          </div>
+          
+          {resources && resources.length > 0 ? (
+            <div className="w-1/2 p-2 mb-1.5 pb-2.5 h-full">
+              <Carousel slide={false} className="h-full">
+                {resources.map((resource, index) => (
+                  <div 
+                    key={index}
+                    className="relative h-0"
+                    style={{ paddingBottom: '56.25%' }} // 16:9 aspect ratio
+                  >
+                    <img
+                      src={resource}
+                      alt={`Resource ${index + 1}`}
+                      className="absolute top-0 left-0 w-full h-full object-cover"
+                    />
+                  </div>
+                ))}
+              </Carousel>
+            </div>
+          ) : (
+            <div className="w-1/2 p-2 mb-1.5 pb-2.5 h-32">
+              <img src={img} alt="Default" />
+            </div>
+          )}
+          
         </div>
-        
-        {resources && resources.length > 0 ? (
-          <div className="w-1/2 p-2 mb-1.5 pb-2.5 h-full">
-            <Carousel slide={false} className="h-full">
-              {resources.map((resource, index) => (
-                <div 
-                  key={index}
-                  className="relative h-0"
-                  style={{ paddingBottom: '56.25%' }} // 16:9 aspect ratio
-                >
-                  <img
-                    src={resource}
-                    alt={`Resource ${index + 1}`}
-                    className="absolute top-0 left-0 w-full h-full object-cover"
-                  />
-                </div>
-              ))}
-            </Carousel>
-          </div>
-        ) : (
-          <div className="w-1/2 p-2 mb-1.5 pb-2.5 h-32">
-            <img src={img} alt="Default" />
-          </div>
-        )}
-        
       </div>
     </div>
   );
