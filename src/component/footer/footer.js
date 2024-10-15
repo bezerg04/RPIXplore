@@ -4,6 +4,10 @@ import { Footer } from "flowbite-react";
 
 
 export function NewFooter() {
+  function scrollToAbout(event) {
+    event.preventDefault();
+    document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+  }
   return (
     <Footer container className="w-full flex mx-auto mt-6">
       <div className="w-full text-center">
@@ -15,7 +19,7 @@ export function NewFooter() {
             name="RPIXplore"
           />
           <Footer.LinkGroup>
-            <Footer.Link href="#">About</Footer.Link>
+            <Footer.Link href="#" onClick={scrollToAbout}>About</Footer.Link>
             <Footer.Link href="https://github.com/bezerg04/RPIXplore">Github</Footer.Link>
             <Footer.Link href="#">Contact</Footer.Link>
           </Footer.LinkGroup>
