@@ -21,7 +21,7 @@ const CustomCarousel = ({ items }) => {
   };
 
   return (
-    <div className="relative w-full h-full p-4 border rounded-lg bg-gray-50">
+    <div className="relative w-full h-full p-4  rounded-lg bg-gray-50">
       {/* Carousel Item */}
       <div className="relative w-full h-full overflow-hidden">
         <div
