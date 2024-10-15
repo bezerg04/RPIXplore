@@ -89,7 +89,7 @@ export default function Resources() {
     return (
         <div>
             <NavBar activeLink="Resources" />
-            <Jumbotron imageSrc={hi.src} /> 
+            {/* <Jumbotron imageSrc={hi.src} />  */}
             <div className="container mx-auto p-4">
                 <input
                     type="text"

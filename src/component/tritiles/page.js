@@ -4,12 +4,13 @@ import Image from 'next/image';
 import community from './community.png';
 import search from './search.png'
 import model from './model.png'
+import forum from './forum.png';
 
 const cardContents = [
     {
       title: "Forum",
       description: "Our forum is in the works! No more need to search through Reddit, Facebook, and Discord to find answers. Made for both parents and students alike.",
-      buttonText: "Forum Coming Soon",
+      buttonText: "Forum",
       imgAlt: "image 1",
       imgSrc: community, // Assign the imported image for the first card
       href: "",
@@ -61,7 +62,7 @@ const cardContents = [
             </div>
             <Button as={Link} href={content.href}>
               {content.buttonText}
-              <svg className="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <svg className="mr-0 ml-1 h-5 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path
                   fillRule="evenodd"
                   d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"

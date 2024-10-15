@@ -14,7 +14,7 @@ const DormCard = ({ dormData }) => {
   return (
     <div onClick={handleClick}>
       <Link href={"/indi"} passHref>
-        <div className="max-w-sm h-96 flex flex-col border border-gray-200 rounded-lg shadow hover:bg-gray-100">
+        <div className="max-w-sm h-80 flex flex-col border border-gray-200 rounded-lg shadow hover:bg-gray-100">
           <div style={{ height: '60%', overflow: 'hidden' }} className="flex-shrink-0">
             <img src={dormImg} alt={dormName} style={{ width: '100%', height: '100%', objectFit: 'cover' }} className='rounded-t-lg'/>
           </div>

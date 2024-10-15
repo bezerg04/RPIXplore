@@ -61,7 +61,7 @@ const DormGrid = ({ setIsLoading }) => {
   return (
     <div>
       <DormFilters filters={filters} setFilters={setFilters} />
-      <div className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+      <div className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
         {dormCards.length ? dormCards : <p>No dorms match the selected filters.</p>}
       </div>
     </div>
