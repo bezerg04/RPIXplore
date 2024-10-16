@@ -3,6 +3,7 @@ import { Button } from 'flowbite-react';
 import { Alert } from 'flowbite-react';
 import NavBar from '@/src/component/navbar/page';
 import Jumbotron from '@/src/component/jumbotron/page';
+import Jumbotron2 from '@/src/component/JumbotronWithText/page.js';
 import Welcome from '@/src/component/welcome/page';
 import Tritiles from '@/src/component/tritiles/page';
 import MapComponent from '@/src/component/map/page';
@@ -13,7 +14,10 @@ export default function Home() {
   return (
     <div>
       <NavBar activeLink="Home" />
-      <Jumbotron imageSrc={jumbopic.src} />
+      <Jumbotron2 titleText="Welcome to RPXplore!"
+        subtitleText="Explore the campus and learn more about what it has to offer."
+        lowerText="Explore, with RPXplore"
+        backgroundImage={jumbopic.src} />
       <Welcome></Welcome>
       <Tritiles></Tritiles>
       <MapComponent></MapComponent>
