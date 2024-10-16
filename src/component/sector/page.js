@@ -1,8 +1,7 @@
-'use client';
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from 'flowbite-react';
-import { Carousel } from 'flowbite-react';
 import data from '../../../resources/json.json';
+import CustomCarousel from '../Carousel/customcarousel';
 
 export default function Sector({ sectionName = 'Quad' }) {
   const sectionData = data[sectionName];
@@ -33,9 +32,9 @@ export default function Sector({ sectionName = 'Quad' }) {
         )}
       </div>
       <div className="flex justify-center">
-        <div style={{ width: '96%' }}className='flex flex-row'>
+        <div style={{ width: '96%' }} className='flex flex-row'>
           <div className="flex flex-col w-1/2 pl-2 mt-0 Inter">
-            <h1 className='font-bold text-xl '>{sectionName}</h1>
+            <h1 className='font-bold text-2xl '>{sectionName}</h1>
 
             <p><strong>Description:</strong> {description}</p>
             <p><strong>Address:</strong> {address}</p>
@@ -53,26 +52,25 @@ export default function Sector({ sectionName = 'Quad' }) {
           </div>
           
           {resources && resources.length > 0 ? (
-            <div className="w-1/2 p-2 mb-1.5 pb-2.5 h-full">
-              <Carousel slide={false} className="h-full">
-                {resources.map((resource, index) => (
+            <div className="w-1/2 p-2 mb-1.5 pb-2.5 h-full"style={{ height: '450px' }}>
+              <CustomCarousel
+                items={resources.map((resource, index) => (
                   <div 
                     key={index}
-                    className="relative h-0"
-                    style={{ paddingBottom: '56.25%' }} // 16:9 aspect ratio
+                    className="relative w-full h-full"
                   >
                     <img
-                      src={resource}
-                      alt={`Resource ${index + 1}`}
-                      className="absolute top-0 left-0 w-full h-full object-cover"
-                    />
+  src={resource}
+  alt={`Resource ${index + 1}`}
+  className="w-full h-full object-contain bg-gray-200"
+/>
                   </div>
                 ))}
-              </Carousel>
+              />
             </div>
           ) : (
             <div className="w-1/2 p-2 mb-1.5 pb-2.5 h-32">
-              <img src={img} alt="Default" />
+              <img src={img} alt="Default" className="w-full h-full object-cover" />
             </div>
           )}
           
