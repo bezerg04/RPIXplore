@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import NavBar from '@/src/component/navbar/page';
 import Jumbotron from '@/src/component/jumbotron/page';
+import Jumbotron2 from '@/src/component/JumbotronWithText/page'
 import data from '../../../resources/json.json';
 import Sector from '@/src/component/sector/page';
 import House from '@/src/component/houseInfo/houseInfo';
@@ -27,7 +28,18 @@ const DormPage = () => {
   return (
     <div > 
       <NavBar activeLink="Dorms" />
-      {dormData && dormData.img ? <Jumbotron imageSrc={dormData.img} /> : <p>Dorm information not available.</p>}
+      {dormData && dormData.img ? (
+        <Jumbotron2
+          titleText="Welcome to RPXplore!"
+          subtitleText="Explore the campus and learn more about what it has to offer."
+          lowerText={`Quad,\nwith RPIXplore`}//add json for this
+          backgroundImage={dormData.img} // Use dorm image dynamically
+          showBottom={true}
+          showTop={false}
+        />
+      ) : (
+        <p>Dorm information not available.</p>
+      )}
       {dormData && <Sector sectionName={dormData.name}></Sector>}
       {dormData && dormData.stacks && dormData.stacks.length > 0 ? (
         <div >
