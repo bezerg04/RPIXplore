@@ -4,6 +4,7 @@ import { HiOutlineUser, HiOutlineUsers, HiOutlineUserGroup } from 'react-icons/h
 import { LiaUsersSolid } from 'react-icons/lia';
 import CustomCarousel from '../Carousel/customcarousel.js';
 
+
 const House = ({ dormData }) => {
   useEffect(() => {
     const script = document.createElement('script');
