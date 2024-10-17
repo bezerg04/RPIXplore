@@ -60,10 +60,10 @@ export default function Sector({ sectionName = 'Quad' }) {
                     className="relative w-full h-full"
                   >
                     <img
-  src={resource}
-  alt={`Resource ${index + 1}`}
-  className="w-full h-full object-contain bg-gray-200"
-/>
+                      src={resource}
+                      alt={`Resource ${index + 1}`}
+                      className="w-full h-full object-contain "
+                    />
                   </div>
                 ))}
               />
