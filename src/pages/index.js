@@ -25,7 +25,7 @@ export default function Home() {
       <Welcome></Welcome>
       <Tritiles></Tritiles>
       <MapComponent></MapComponent>
-      <NewFooter/>
+      {/* <NewFooter/> */}
     </div>
   );
 }
