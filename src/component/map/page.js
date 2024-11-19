@@ -68,7 +68,7 @@ function MapComponent() {
     locations[zoneIndex].dorms.map((dorm, dormIndex) => (
       <button
         key={dormIndex}
-        className="px-0 py-1 text-black rounded hover:bg-blue-300 transition duration-150"
+        className="px-1 py-1 text-black rounded hover:bg-blue-300 transition duration-150"
         onClick={() => handleDormClick(dorm.lat, dorm.lng)}
       >
         {dorm.name}
