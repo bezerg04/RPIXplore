@@ -3,14 +3,18 @@ import { addDoc, collection } from "firebase/firestore";
 import { Alert } from "flowbite-react"; // Import Flowbite Alert
 import { db } from "../../utils/firebase";
 
-export default function CreatePost({ user, onPostCreated }) {
+export default function CreatePost({ user, isAdmin, onPostCreated }) {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
+  const [anonymous, setAnonymous] = useState(false); // Toggle for anonymous posting
   const [notification, setNotification] = useState(null); // For alerts
 
   const handleCreatePost = async () => {
     if (!title.trim() || !content.trim()) {
-      setNotification({ type: "error", message: "Both title and content are required!" });
+      setNotification({
+        type: "error",
+        message: "Both title and content are required!",
+      });
       return;
     }
 
@@ -18,26 +22,35 @@ export default function CreatePost({ user, onPostCreated }) {
       await addDoc(collection(db, "posts"), {
         title,
         content,
-        author: {
-          uid: user.uid,
-          displayName: user.displayName,
-          email: user.email,
-        },
+        author: isAdmin
+          ? { displayName: "ADMIN", uid: null }
+          : anonymous
+          ? { displayName: "Anonymous", uid: user.uid }
+          : { displayName: user.displayName, uid: user.uid },
         createdAt: new Date(),
         upvotes: 0,
         downvotes: 0,
         voters: {},
-        greenlighted: false, // Posts default to unapproved
+        greenlighted: isAdmin, // Admin posts are greenlit automatically
       });
 
       setTitle("");
       setContent("");
-      setNotification({ type: "success", message: "Post created successfully! Awaiting approval." });
+      setAnonymous(false);
+      setNotification({
+        type: "success",
+        message: isAdmin
+          ? "Post created successfully as ADMIN."
+          : "Post created successfully! Awaiting approval.",
+      });
 
       if (onPostCreated) onPostCreated();
     } catch (error) {
       console.error("Error creating post:", error);
-      setNotification({ type: "error", message: "Failed to create post. Please try again." });
+      setNotification({
+        type: "error",
+        message: "Failed to create post. Please try again.",
+      });
     }
   };
 
@@ -66,6 +79,20 @@ export default function CreatePost({ user, onPostCreated }) {
         className="w-full mb-3 px-3 py-2 border rounded-lg"
         rows="4"
       />
+      {!isAdmin && ( // Only show toggle for non-admin users
+        <div className="flex items-center mb-4">
+          <input
+            type="checkbox"
+            id="anonymous"
+            checked={anonymous}
+            onChange={(e) => setAnonymous(e.target.checked)}
+            className="mr-2"
+          />
+          <label htmlFor="anonymous" className="text-sm text-gray-600">
+            Post anonymously
+          </label>
+        </div>
+      )}
       <button
         onClick={handleCreatePost}
         className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"

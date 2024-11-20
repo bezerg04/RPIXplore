@@ -1,12 +1,6 @@
-import React, { useEffect, useState } from "react";
-import {
-  doc,
-  updateDoc,
-  deleteDoc,
-  collection,
-  onSnapshot,
-} from "firebase/firestore";
-import { Alert } from "flowbite-react"; // Import Flowbite Alert
+import React, { useState, useEffect } from "react";
+import { doc, updateDoc, deleteDoc, collection, onSnapshot } from "firebase/firestore";
+import { Alert, Button } from "flowbite-react";
 import { db } from "../../utils/firebase";
 
 export default function AdminControls({ posts, setPosts }) {
@@ -119,18 +113,15 @@ export default function AdminControls({ posts, setPosts }) {
               <p>{post.content}</p>
               <p className="text-sm text-gray-600">By: {post.author.displayName}</p>
               <div className="mt-2 flex space-x-2">
-                <button
+                <Button
                   onClick={() => handleGreenlightPost(post.id)}
-                  className="bg-green-600 text-white px-3 py-1 rounded-lg hover:bg-green-700"
+                  color="success"
                 >
                   Greenlight
-                </button>
-                <button
-                  onClick={() => handleDeletePost(post.id)}
-                  className="bg-red-600 text-white px-3 py-1 rounded-lg hover:bg-red-700"
-                >
+                </Button>
+                <Button onClick={() => handleDeletePost(post.id)} color="failure">
                   Delete
-                </button>
+                </Button>
               </div>
             </div>
           ))}
@@ -150,12 +141,9 @@ export default function AdminControls({ posts, setPosts }) {
               <p>{post.content}</p>
               <p className="text-sm text-gray-600">By: {post.author.displayName}</p>
               <div className="mt-2 flex space-x-2">
-                <button
-                  onClick={() => handleDeletePost(post.id)}
-                  className="bg-red-600 text-white px-3 py-1 rounded-lg hover:bg-red-700"
-                >
+                <Button onClick={() => handleDeletePost(post.id)} color="failure">
                   Delete
-                </button>
+                </Button>
               </div>
             </div>
           ))}
@@ -172,18 +160,18 @@ export default function AdminControls({ posts, setPosts }) {
             <p>{comment.content}</p>
             <p className="text-sm text-gray-600">By: {comment.author.displayName}</p>
             <div className="mt-2 flex space-x-2">
-              <button
+              <Button
                 onClick={() => handleGreenlightComment(comment.id)}
-                className="bg-green-600 text-white px-3 py-1 rounded-lg hover:bg-green-700"
+                color="success"
               >
                 Greenlight
-              </button>
-              <button
+              </Button>
+              <Button
                 onClick={() => handleDeleteComment(comment.id)}
-                className="bg-red-600 text-white px-3 py-1 rounded-lg hover:bg-red-700"
+                color="failure"
               >
                 Delete
-              </button>
+              </Button>
             </div>
           </div>
         ))}
@@ -200,12 +188,12 @@ export default function AdminControls({ posts, setPosts }) {
             <p>{comment.content}</p>
             <p className="text-sm text-gray-600">By: {comment.author.displayName}</p>
             <div className="mt-2 flex space-x-2">
-              <button
+              <Button
                 onClick={() => handleDeleteComment(comment.id)}
-                className="bg-red-600 text-white px-3 py-1 rounded-lg hover:bg-red-700"
+                color="failure"
               >
                 Delete
-              </button>
+              </Button>
             </div>
           </div>
         ))}

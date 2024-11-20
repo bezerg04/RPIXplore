@@ -166,7 +166,12 @@ export default function Post({ post, user, isAdmin }) {
     >
       <h3 className="text-xl font-semibold">{livePost.title}</h3>
       <p>{livePost.content}</p>
-      <p className="text-sm text-gray-600">By: {livePost.author?.displayName || "Unknown"}</p>
+      <p className="text-sm text-gray-600">
+        By: {livePost.anonymous && !isAdmin && livePost.author?.uid !== user?.uid
+          ? "Anonymous"
+          : livePost.author?.displayName || "Unknown"}
+      </p>
+
       {!livePost.greenlighted && livePost.author?.uid === user?.uid && (
         <p className="text-yellow-600 italic">Pending Approval</p>
       )}
