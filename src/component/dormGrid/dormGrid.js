@@ -10,7 +10,7 @@ const DormGrid = ({ setIsLoading }) => {
     year: [],
     accessible: [],
     ac: [],
-    location: [] // Initialize location filter
+    location: []
   });
 
   useEffect(() => {
@@ -50,18 +50,23 @@ const DormGrid = ({ setIsLoading }) => {
         ? "Multiple buildings"
         : Object.keys(buildingDetails.stacks[0].roomInfo.types).join(", "),
       dormImg: buildingDetails.img,
-      dormLink: `/${buildingName.toLowerCase()}`, // Ensure this link is correct
-      address: buildingDetails.address, // Added address
-      location: buildingDetails.location // Added location
+      dormLink: `/${buildingName.toLowerCase()}`,
+      address: buildingDetails.address,
+      location: buildingDetails.location
     };
 
     return <DormCard key={buildingName} dormData={exampleDormData} />;
   });
 
   return (
-    <div>
-      <DormFilters filters={filters} setFilters={setFilters} />
-      <div className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+    <div className="flex flex-col h-full">
+      {/* Filters always visible */}
+      <div className="p-4 bg-white border-b shadow">
+        <DormFilters filters={filters} setFilters={setFilters} />
+      </div>
+
+      {/* Scrollable grid */}
+      <div className="flex-grow overflow-y-auto p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
         {dormCards.length ? dormCards : <p>No dorms match the selected filters.</p>}
       </div>
     </div>
