@@ -31,28 +31,28 @@ export default function NavBar({ activeLink }) {
         {/* Right Section: Navigation Links and Authentication */}
         <div className="flex items-center space-x-10">
           {/* Navigation Links */}
-          <ul className="flex items-center space-x-8 list-none">
-            <li>
+          <div className="flex items-center space-x-8 list-none">
+            
               <Navbar.Link href="/" active={activeLink === 'Home'} className="Inter text-lg font-medium">
                 Home
               </Navbar.Link>
-            </li>
-            <li>
+            
+            
               <Navbar.Link as={Link} href="/dorms" active={activeLink === 'Dorms'} className="Inter text-lg font-medium">
                 Dorms
               </Navbar.Link>
-            </li>
-            <li>
+            
+            
               <Navbar.Link as={Link} href="/forum" active={activeLink === 'Forum'} className="Inter text-lg font-medium">
                 Forum
               </Navbar.Link>
-            </li>
-            <li>
+            
+            
               <Navbar.Link as={Link} href="/resources" active={activeLink === 'Resources'} className="Inter text-lg font-medium">
                 Resources
               </Navbar.Link>
-            </li>
-          </ul>
+            </div>
+          
 
           {/* Sign-In Button or Avatar */}
           <div>
