@@ -13,7 +13,7 @@ const cardContents = [
       buttonText: "Forum",
       imgAlt: "image 1",
       imgSrc: community, // Assign the imported image for the first card
-      href: "",
+      href: "../forum",
     },
     {
       title: "Resources and FAQ",

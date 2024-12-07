@@ -1,8 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import NavBar from '@/src/component/navbar/page';
-import Jumbotron from '@/src/component/jumbotron/page';
-import Jumbotron2 from '@/src/component/JumbotronWithText/page'
+import Jumbotron2 from '@/src/component/JumbotronWithText/page';
 import data from '../../../resources/json.json';
 import Sector from '@/src/component/sector/page';
 import House from '@/src/component/houseInfo/houseInfo';
@@ -26,13 +25,13 @@ const DormPage = () => {
   }, []);
 
   return (
-    <div > 
+    <div>
       <NavBar activeLink="Dorms" />
       {dormData && dormData.img ? (
         <Jumbotron2
           titleText="Welcome to RPXplore!"
           subtitleText="Explore the campus and learn more about what it has to offer."
-          lowerText={`Quad,\nwith RPIXplore`}//add json for this
+          lowerText={dormData.jumboText} // Pull lowerText dynamically
           backgroundImage={dormData.img} // Use dorm image dynamically
           showBottom={true}
           showTop={false}
@@ -42,7 +41,7 @@ const DormPage = () => {
       )}
       {dormData && <Sector sectionName={dormData.name}></Sector>}
       {dormData && dormData.stacks && dormData.stacks.length > 0 ? (
-        <div >
+        <div>
           {dormData.stacks.map((stack, index) => (
             <div key={index} id={`stack-${index}`}>
               <House dormData={stack}></House>
