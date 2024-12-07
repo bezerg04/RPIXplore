@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Tabs } from 'flowbite-react';
 import { HiOutlineUser, HiOutlineUsers, HiOutlineUserGroup } from 'react-icons/hi2';
 import { LiaUsersSolid } from 'react-icons/lia';
@@ -40,10 +40,12 @@ const QuadHouse = ({ dormData }) => {
               </ul>
             </div>
 
-            {/* Right side: 3D Scans */}
             <div className="w-1/2 border p-4 rounded-lg bg-gray-50">
-              <h5 className="text-lg font-bold mb-2">{dormData.title} {roomType} Scans</h5>
-              <Tabs aria-label="Room Visuals" style="underline">
+              <h5 className="text-lg font-bold mb-2"> Images and Scans</h5>
+              <Tabs 
+              aria-label="Room Visuals" 
+              style="underline" 
+              >
                 <Tabs.Item title="Images">
                   <div className="relative w-full h-[400px]">
                     {roomData.img && roomData.img.length > 0 ? (
