@@ -5,6 +5,7 @@ import Jumbotron2 from '@/src/component/JumbotronWithText/page';
 import data from '../../../resources/json.json';
 import Sector from '@/src/component/sector/page';
 import House from '@/src/component/houseInfo/houseInfo';
+import QuadHouses from '@/src/component/quadinfo/quadHouseInfo';
 
 const DormPage = () => {
   const [dormData, setDormData] = useState(null);
@@ -44,7 +45,7 @@ const DormPage = () => {
         <div>
           {dormData.stacks.map((stack, index) => (
             <div key={index} id={`stack-${index}`}>
-              <House dormData={stack}></House>
+              <QuadHouses dormData={stack}></QuadHouses>
             </div>
           ))}
         </div>
