@@ -85,7 +85,7 @@
         },
         {
             "title" : "Pardee",
-            "description" : "Roebling is the north-eastern most, corner-building, stack of Quad. Like the rest of Quad, Roebling is accessible through the campus facing front door that is keycard locked. Via the third floor, Roebling connects to Pardee's third floor. The bathrooms are cleaned twice a week. The stack is single gender.",
+            "description" : "Pardee Info",
             "gender" : "single gender",
             "furniture" : {
                 "wardrobe" : "36in x 25in x 72in",

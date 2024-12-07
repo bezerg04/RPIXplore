@@ -30,13 +30,14 @@ const QuadHouse = ({ dormData }) => {
       return (
         <Tabs.Item key={roomType} title={roomType} icon={Icon} className="mx-4">
           <div className="flex space-x-4 mx-4">
-            {/* Left side: Image carousel */}
             <div className="w-1/2 border p-4 rounded-lg bg-gray-50">
               <h5 className="text-lg font-bold mb-2">{dormData.title} {roomType}</h5>
               <p className="mb-4">{dormData.description}</p>
               <ul className="list-disc pl-4">
-                <li><strong>Capacity:</strong> {roomData.capacity}</li>
-                <li><strong>Features:</strong> {roomData.features}</li>
+              <li>
+                <strong>Square Footage:</strong> {roomData.sqft}
+              </li>
+              
               </ul>
             </div>
 
