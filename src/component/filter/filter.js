@@ -99,7 +99,7 @@ const DormFilters = ({ filters, setFilters }) => {
   return (
     <div>
       <div className="flex flex-wrap items-center justify-start space-x-4 p-4 ">
-        <Dropdown className='pb-5' label="Room Type">
+        <Dropdown className='p-5' label="Room Type">
           {createClickableRow('single', 'Single', 'roomType', 'Single')}
           {createClickableRow('double', 'Double', 'roomType', 'Double')}
           {createClickableRow('triple', 'Triple', 'roomType', 'Triple')}
